@@ -38,7 +38,7 @@ jobs:
       - name: Persist seen listings
         run: |
           if [[ -n "$(git status --porcelain seen_ids.json)" ]]; then
-            git config user.name  "kamernet-bot"
+            git config user.name  "kamernet_bot"
             git config user.email "bot@users.noreply.github.com"
             git add seen_ids.json
             git commit -m "state: update seen listings [skip ci]"
