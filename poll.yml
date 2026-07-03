@@ -6,7 +6,7 @@ on:
     # under load. If you need faster/steadier polling, use the always-on VM
     # option in the README instead.
     - cron: "*/5 * * * *"
-  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
+  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
 
 # Needed so the job can commit seen_ids.json back to the repo.
 permissions:
@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: kamernet-poll
-  cancel-in-progress: false   # never interrupt a run mid-alert
+  cancel-in-progress: false # never interrupt a run mid-alert
 
 jobs:
   poll:
@@ -33,7 +33,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python -m kamernet_bot.main once
+        run: python -m kamernet-bot.main once
 
       - name: Persist seen listings
         run: |
