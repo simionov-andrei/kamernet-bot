@@ -15,7 +15,7 @@ from pathlib import Path
 
 import yaml
 
-import matcher, notifier, scraper, state
+from . import matcher, notifier, scraper, state
 
 logging.basicConfig(
     level=logging.INFO,
