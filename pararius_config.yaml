@@ -1,33 +1,37 @@
 # ── Search URLs the scraper fetches ───────────────────────────────────────
-# Your combined page lists all property types together, so there's just one URL.
-# Set its maxRent to your HIGHEST cap (1350) so studios aren't dropped by the
-# server; matcher.py then trims rooms down to their 800 cap client-side.
-# Build the URL in the browser (city, min size, max rent) and paste it here.
+# Build the URL in the browser (city, price, size, rooms filters) and paste
+# it here. Pararius doesn't take a maxRent-in-URL the way Kamernet does for
+# every filter, so lean on `search` below for client-side refinement.
 search_urls:
-  - "https://kamernet.nl/en/for-rent/properties-amsterdam?radius=1&sort=1"
+  - "https://www.pararius.com/apartments/amsterdam"
 
 # ── Your search preferences (client-side refinement of the results) ───────────
 # Anything left blank / commented is ignored (no filtering on that field).
 
 search:
-  # The city or cities you're searching. Case-insensitive substring match.
+  # The city or cities you're searching. Case-insensitive substring match
+  # against the location text on the card (often "<postcode> <city>").
   cities:
     - Amsterdam
   # Per-type max monthly rent in EUR (inclusive). The cap that applies is
   # chosen by the listing's property type. Keys are matched case-insensitively.
   max_rent_by_type:
-    Studio: 1350
-    Room: 900
-    Apartment: 1350
+    apartment: 2000
+    studio: 1500
+    room: 900
   # Fallback cap for any type not listed above. Leave null for no cap.
   max_rent: null
   # Min living area in m². Leave null for no minimum.
   min_area: 1
-  # Allowed property types. Kamernet uses: Room, Studio, Apartment, "Anti-squat".
+  # Min number of rooms. Leave null for no minimum.
+  min_rooms: null
+  # Allowed property types. Pararius uses: apartment, house, room, studio.
   # Leave the list empty to allow all.
   property_types:
-    - Room
-    - Studio
+    - apartment
+    - studio
+    - house
+    - room
   # Only alert on listings that allow your situation. Optional keyword filters.
   # A listing is REJECTED if its description contains any of these (lowercased).
   exclude_keywords:

@@ -1,0 +1,48 @@
+name: pararius-poll
+
+on:
+  schedule:
+    # GitHub's minimum cron granularity is 5 minutes, and runs can be delayed
+    # under load. If you need faster/steadier polling, use the always-on VM
+    # option in the README instead.
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
+
+# Needed so the job can commit pararius_seen_ids.json back to the repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: pararius-poll
+  cancel-in-progress: false # never interrupt a run mid-alert
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Poll Pararius
+        env:
+          PARARIUS_TELEGRAM_TOKEN: ${{ secrets.PARARIUS_TELEGRAM_TOKEN }}
+          PARARIUS_TELEGRAM_CHAT_ID: ${{ secrets.PARARIUS_TELEGRAM_CHAT_ID }}
+        run: python -m pararius_bot.main once
+
+      - name: Persist seen listings
+        run: |
+          if [[ -n "$(git status --porcelain pararius_seen_ids.json)" ]]; then
+            git config user.name  "pararius_bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add pararius_seen_ids.json
+            git commit -m "state: update seen listings [skip ci]"
+            git push
+          else
+            echo "No state change."
+          fi
