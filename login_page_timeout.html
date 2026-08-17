@@ -1,0 +1,2251 @@
+<!DOCTYPE html><html lang="nl" dir="ltr" xmlns:zigsitepackage="http://typo3.org/ns/ZIG/ZigSitepackage/ViewHelpers" class="hydrated"><head><style id="react-aria-pressable-style">@layer {
+  [data-react-aria-pressable] {
+    touch-action: pan-x pan-y pinch-zoom;
+  }
+}</style><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8"><style data-styles="">slot-fb{display:contents}slot-fb[hidden]{display:none}zds-accordion,zds-accordion-group,zds-advanced-select,zds-advanced-select-item,zds-alert,zds-avatar,zds-backdrop,zds-badge,zds-badge-group,zds-breadcrumb,zds-breadcrumbs,zds-button,zds-button-group,zds-calendar,zds-card,zds-carousel,zds-checkbox,zds-checkbox-group,zds-chip,zds-clickable,zds-collapsible,zds-config,zds-content-reveal,zds-context-menu,zds-data-table,zds-data-table-cell,zds-data-table-core,zds-data-table-header-cell,zds-data-table-header-row,zds-data-table-row,zds-divider,zds-drawer,zds-dwelling-card,zds-dynamic-rounding,zds-form,zds-form-error,zds-form-label,zds-header-set,zds-icon,zds-input-code,zds-input-content-container,zds-input-counter,zds-input-date,zds-input-number,zds-input-password,zds-input-search,zds-input-text,zds-input-time,zds-item,zds-link,zds-link-cta,zds-map-marker,zds-modal,zds-navigation,zds-navigation-body,zds-navigation-body-link,zds-navigation-link,zds-navigation-logo,zds-navigation-panel,zds-navigation-panel-link,zds-pagination,zds-pane,zds-popout,zds-progress-arrow,zds-progress-arrow-group,zds-progress-bar,zds-radio,zds-radio-group,zds-radio-panel,zds-radio-panel-item,zds-range-slider,zds-select,zds-selectable,zds-selectable-group,zds-side-menu,zds-side-menu-item,zds-side-menu-section,zds-side-sheet,zds-skeleton-rectangle,zds-skeleton-text,zds-snackbar,zds-snackbar-manager,zds-spinner,zds-step,zds-stepper,zds-switch,zds-tab,zds-table,zds-tabs,zds-textarea,zds-timeline-collapsible,zds-timeline-divider,zds-timeline-item,zds-tooltip,zds-upload,zds-video{visibility:hidden}.hydrated{visibility:inherit}</style>
+
+<!-- 
+	Ontwikkeld door Zig Websoftware
+	bel voor meer informatie: 035-5241040 of ga naar https://www.zig.nl
+	===
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2026 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+
+<title>Account</title>
+<meta name="generator" content="TYPO3 CMS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="msapplication-tilecolor" content="#FFFFFF">
+<meta name="otap" content="productie">
+
+<link href="https://zds-cdn.zig365.nl/@zig-design-system-style/19.3.39/zds/style/style.css" rel="stylesheet">
+<link href="https://zds-cdn.zig365.nl/@zig-design-system-style/19.3.39/zds/style/themes/plaza/fonts.css" rel="stylesheet">
+<link href="https://zds-cdn.zig365.nl/@zig-design-system-style/19.3.39/zds/style/themes/plaza/tokens.css" rel="stylesheet">
+<link rel="stylesheet" href="/typo3temp/assets/compressed/merged-9588aad3e1e9691fb29e6d5a0764888f-ff83beb3009e4ccacbb88e4f6a7a5330.css?1786481103" media="all">
+<link href="/_assets/ad8927e84ac4d76265df086510629ea1/Vite/assets/styles-CXEmqsXU.css" rel="stylesheet">
+<link href="/_assets/ad8927e84ac4d76265df086510629ea1/Vite/assets/Notifications-LwGf51Nl.css" rel="stylesheet">
+<link href="/_assets/ad8927e84ac4d76265df086510629ea1/Vite/assets/UnitFormatService-BTdBcLKV.css" rel="stylesheet">
+<link href="/_assets/ad8927e84ac4d76265df086510629ea1/Vite/assets/Search-Lo45AdFj.css" rel="stylesheet">
+<link href="/_assets/ad8927e84ac4d76265df086510629ea1/Vite/assets/SmartAppBanner-B3ade4nN.css" rel="stylesheet">
+<link href="/_assets/c25ace7dfe73fbb8c05f07ae9ca2a4bb/Vite/main.css?1786017953" rel="stylesheet">
+
+
+<script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/identify_ea043f1c.js"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MTJjNTgwMmFjOQ.js" data-id="CTTTE23C77U1GH2BMUAG"></script><script type="text/javascript" charset="UTF-8" async="" src="https://consent.cookiebot.com/3c5d43a8-a43a-4d07-9cf1-654b7e0626ed/cc.js?renew=false&amp;referer=plaza.newnewnew.space&amp;dnt=false&amp;init=false"></script><script src="https://connect.facebook.net/signals/config/1033302636871454?v=2.9.373&amp;r=stable&amp;domain=plaza.newnewnew.space&amp;hme=6d1ed5deee7eafc01c53d9e9fc3c4e10db50c3d28237bc4932686777e5c3969a&amp;ex_m=111%2C215%2C163%2C23%2C76%2C77%2C154%2C72%2C71%2C11%2C172%2C96%2C17%2C146%2C134%2C41%2C79%2C84%2C142%2C168%2C174%2C27%2C15%2C28%2C29%2C30%2C32%2C50%2C155%2C81%2C119%2C19%2C21%2C46%2C42%2C44%2C43%2C89%2C98%2C102%2C117%2C153%2C156%2C48%2C118%2C25%2C22%2C126%2C73%2C38%2C158%2C157%2C159%2C150%2C148%2C26%2C37%2C61%2C116%2C170%2C74%2C18%2C161%2C121%2C87%2C70%2C20%2C91%2C92%2C123%2C90%2C144%2C143%2C147%2C103%2C169%2C36%2C51%2C120%2C49%2C8%2C4%2C5%2C7%2C6%2C3%2C97%2C108%2C175%2C182%2C229%2C78%2C242%2C241%2C240%2C24%2C35%2C57%2C110%2C63%2C10%2C67%2C104%2C105%2C106%2C112%2C137%2C33%2C31%2C139%2C140%2C141%2C136%2C135%2C164%2C80%2C167%2C165%2C166%2C52%2C62%2C130%2C16%2C171%2C47%2C286%2C287%2C285%2C300%2C318%2C222%2C211%2C64%2C212%2C210%2C321%2C312%2C54%2C223%2C114%2C138%2C86%2C128%2C56%2C127%2C133%2C132%2C60%2C68%2C66%2C160%2C82%2C83%2C122%2C39%2C34%2C55%2C58%2C107%2C173%2C1%2C131%2C14%2C129%2C12%2C2%2C59%2C99%2C69%2C65%2C125%2C95%2C94%2C176%2C177%2C100%2C101%2C9%2C109%2C53%2C151%2C93%2C85%2C75%2C124%2C113%2C45%2C152%2C0%2C88%2C145%2C149%2C162%2C40%2C115%2C13%2C178" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CTTTE23C77U1GH2BMUAG&amp;lib=ttq"></script><script type="text/javascript" async="" src="https://connection.newnewnew.space/gtag/js?id=AW-16991943201&amp;cx=c&amp;gtm=4e68a1"></script><script type="text/javascript" async="" src="https://connection.newnewnew.space/gtag/js?id=AW-1034969447&amp;cx=c&amp;gtm=4e68a1"></script><script type="text/javascript" async="" src="https://connection.newnewnew.space/gtag/js?id=G-SYD4DWP4F3&amp;cx=c&amp;gtm=4e68a1"></script><script type="text/javascript" async="" src="https://connection.newnewnew.space/gtm.js?id=GTM-PFQSL5G&amp;gtg_health=1"></script><script type="text/javascript" async="" src="https://connection.newnewnew.space/gtag/js?id=AW-11137753805&amp;cx=c&amp;gtm=4e68a1"></script><script type="text/javascript" async="" src="https://consent.cookiebot.com/uc.js?cbid=3c5d43a8-a43a-4d07-9cf1-654b7e0626ed&amp;implementation=gtm&amp;consentmode-dataredaction=dynamic" id="Cookiebot"></script><script async="" src="https://connection.newnewnew.space/buwnofau.js?st=PFQSL5G"></script><script src="/_assets/93d1f5e96a2bd8334934aa391fa2812d/JavaScript/jQuery/jquery-3.6.4.min.js?1786017525"></script>
+
+<script src="/_assets/c25ace7dfe73fbb8c05f07ae9ca2a4bb/Js/Lib/jquery-3.6.1.min.js?1786017498"></script>
+<script src="/_assets/93d1f5e96a2bd8334934aa391fa2812d/JavaScript/AngularManagement/angular.min.js?1786017525"></script>
+<script src="/_assets/93d1f5e96a2bd8334934aa391fa2812d/JavaScript/AngularManagement/angular-delayed-bootstrap.js?1786017525"></script>
+<script src="/_assets/f8b2b094201d06dae8db70ae8e88754c/jquery-focuspoint-2015-08-31/js/jquery.focuspoint.min.js?1738050938"></script>
+<script src="/typo3temp/assets/compressed/merged-4df2979b815ce79d0507d1124c50685a.js?1786481103"></script>
+<script src="/_assets/c25ace7dfe73fbb8c05f07ae9ca2a4bb/Js/Lib/angular-locale_nl-nl.js?1786017498"></script>
+<script id="Cookiebot" data-cbid="969ffba5-e68b-440e-a3e9-ef875ab26b5e" data-culture="nl" async="async" src="https://consent.cookiebot.eu/uc.js"></script>
+<script type="module" src="https://zds-cdn.zig365.nl/@zig-design-system-ui-components/19.3.39/zds/ui-components/ui-components/ui-components.esm.js"></script>
+<script type="module" src="https://zds-cdn.zig365.nl/@zig-design-system-react/19.3.39/lazy/index.js"></script>
+<script data-cookieconsent="ignore">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+
+        gtag("consent", "default", {
+            ad_personalization: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            analytics_storage: "denied",
+            functionality_storage: "denied",
+            personalization_storage: "denied",
+            security_storage: "granted",
+            wait_for_update: 500,
+        });
+
+        gtag("set", "ads_data_redaction", true);
+        gtag("set", "url_passthrough", true);
+    </script>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/fileadmin/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/fileadmin/favicons/site.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/fileadmin/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/fileadmin/favicons/favicon-16x16.png">
+<link rel="mask-icon" href="/fileadmin/favicons/safari-pinned-tab.svg">
+<link sizes="48x48" rel="shortcut icon" href="/fileadmin/favicons/favicon.ico">
+<link rel="icon" href="/fileadmin/favicons/favicon.ico">
+
+<script>window.MARATHON_APP_ID = '/azure-prd/bu-wrb/mosaic/wzp/plaza/productie';</script><script>window.languageBase = '/';</script>  <!-- Google Tag Manager -->
+  <script>!function(){"use strict";function l(e){for(var t=e,r=0,n=document.cookie.split(";");r<n.length;r++){var o=n[r].split("=");if(o[0].trim()===t)return o[1]}}function s(e){return localStorage.getItem(e)}function u(e){return window[e]}function d(e,t){e=document.querySelector(e);return t?null==e?void 0:e.getAttribute(t):null==e?void 0:e.textContent}var e=window,t=document,r="script",n="dataLayer",o="PFQSL5G",a="https://connection.newnewnew.space",i="",c="buwnofau",E="stapeUserId",I="",v="",g=!1;try{var g=!!E&&(m=navigator.userAgent,!!(m=new RegExp("Version/([0-9._]+)(.*Mobile)?.*Safari.*").exec(m)))&&16.4<=parseFloat(m[1]),A="stapeUserId"===E,f=g&&!A?function(e,t,r){void 0===t&&(t="");var n={cookie:l,localStorage:s,jsVariable:u,cssSelector:d},t=Array.isArray(t)?t:[t];if(e&&n[e])for(var o=n[e],a=0,i=t;a<i.length;a++){var c=i[a],c=r?o(c,r):o(c);if(c)return c}else console.warn("invalid uid source",e)}(E,I,v):void 0;g=g&&(!!f||A)}catch(e){console.error(e)}var m=e,E=(m[n]=m[n]||[],m[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"}),t.getElementsByTagName(r)[0]),I="dataLayer"===n?"":"&l="+n,v=f?"&bi="+encodeURIComponent(f):"",A=t.createElement(r),e=g?"kp"+c:c,n=!g&&i?i:a;A.async=!0,A.src=n+"/"+e+".js?st="+o+I+v+"",null!=(f=E.parentNode)&&f.insertBefore(A,E)}();</script>
+  <!-- End Google Tag Manager -->
+<link rel="canonical" href="https://plaza.newnewnew.space/portaal/account">
+
+<link rel="alternate" hreflang="nl-NL" href="/portaal/account">
+<link rel="alternate" hreflang="en-GB" href="/en/my-page/account">
+<link rel="alternate" hreflang="x-default" href="/portaal/account">
+<!-- This site is optimized with the Yoast SEO for TYPO3 plugin - https://yoast.com/typo3-extensions-seo/ -->
+<script type="application/ld+json">[{"@context":"https:\/\/www.schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"\/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"\/portaal","name":"Mijn pagina"}},{"@type":"ListItem","position":3,"item":{"@id":"\/portaal\/account","name":"Account"}}]}]</script>
+<script type="translations">{"tx_zigsitepackage.search.placeholder":{"value":"Hallo, waar bent u naar op zoek?","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.placeholder"},"tx_zigsitepackage.search.showMore":{"value":"Bekijk meer","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.showMore"},"tx_zigsitepackage.search.showLess":{"value":"Bekijk minder","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.showLess"},"tx_zigsitepackage.search.news":{"value":"Nieuws","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.news"},"tx_zigsitepackage.search.arrangeImmediately":{"value":"Direct regelen","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.arrangeImmediately"},"tx_zigsitepackage.search.projects":{"value":"Projecten","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.projects"},"tx_zigsitepackage.search.units":{"value":"Actueel aanbod","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.units"},"tx_zigsitepackage.search.complexes":{"value":"Complexen","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.complexes"},"tx_zigsitepackage.search.faq":{"value":"Vraag en antwoord","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.faq"},"tx_zigsitepackage.search.downloads":{"value":"Documenten","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.downloads"},"tx_zigsitepackage.search.other":{"value":"Overige resultaten","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.other"},"tx_zigsitepackage.search.noResult.title":{"value":"Geen resultaten gevonden","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.noResult.title"},"tx_zigsitepackage.search.noResult.searchTips":{"value":"Zoektips","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.noResult.searchTips"},"tx_zigsitepackage.search.noResult.firstTip":{"value":"Zorg ervoor dat alle woorden juist gespeld zijn.","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.noResult.firstTip"},"tx_zigsitepackage.search.noResult.secondTip":{"value":"Maak de zoekopdracht algemener.","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.noResult.secondTip"},"tx_zigsitepackage.search.noResult.thirdTip":{"value":"Probeer een andere zoekopdracht.","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.noResult.thirdTip"},"tx_zigsitepackage.search.noResult.contact":{"value":"Geen resultaat? Neem dan contact met ons op.","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.noResult.contact"},"tx_zigsitepackage.search.readMore":{"value":"Lees verder","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.readMore"},"tx_zigsitepackage.search.about":{"value":"over","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.search.about"},"tx_zigsitepackage.smartAppBanner.view":{"value":"Bekijk","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.smartAppBanner.view"},"tx_zigsitepackage.smartAppBanner.store.ios":{"value":"In de App Store","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.smartAppBanner.store.ios"},"tx_zigsitepackage.smartAppBanner.store.android":{"value":"In Google Play","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.smartAppBanner.store.android"},"tx_zigsitepackage.smartAppBanner.price":{"value":"Gratis","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:tx_zigsitepackage.smartAppBanner.price"},"unknownError":{"value":"Er is een onverwachte fout opgetreden","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:unknownError"},"alert.warning.title":{"value":"Let op!","key":"zig_sitepackage\/Resources\/Private\/Language\/locallang.xlf:alert.warning.title"}}</script>
+<style id="_goober"> .go1475592160{height:0;}.go1671063245{height:auto;}.go1888806478{display:flex;flex-wrap:wrap;flex-grow:1;}@media (min-width:600px){.go1888806478{flex-grow:initial;min-width:288px;}}.go167266335{background-color:#313131;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;color:#fff;align-items:center;padding:6px 16px;border-radius:4px;box-shadow:0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);}.go3162094071{padding-left:20px;}.go3844575157{background-color:#313131;}.go1725278324{background-color:#43a047;}.go3651055292{background-color:#d32f2f;}.go4215275574{background-color:#ff9800;}.go1930647212{background-color:#2196f3;}.go946087465{display:flex;align-items:center;padding:8px 0;}.go703367398{display:flex;align-items:center;margin-left:auto;padding-left:16px;margin-right:-8px;}.go3963613292{width:100%;position:relative;transform:translateX(0);top:0;right:0;bottom:0;left:0;min-width:288px;}.go1141946668{box-sizing:border-box;display:flex;max-height:100%;position:fixed;z-index:1400;height:auto;width:auto;transition:top 300ms ease 0ms,right 300ms ease 0ms,bottom 300ms ease 0ms,left 300ms ease 0ms,max-width 300ms ease 0ms;pointer-events:none;max-width:calc(100% - 40px);}.go1141946668 .notistack-CollapseWrapper{padding:6px 0px;transition:padding 300ms ease 0ms;}@media (max-width:599.95px){.go1141946668{width:100%;max-width:calc(100% - 32px);}}.go3868796639 .notistack-CollapseWrapper{padding:2px 0px;}.go3118922589{top:14px;flex-direction:column;}.go1453831412{bottom:14px;flex-direction:column-reverse;}.go4027089540{left:20px;}@media (min-width:600px){.go4027089540{align-items:flex-start;}}@media (max-width:599.95px){.go4027089540{left:16px;}}.go2989568495{right:20px;}@media (min-width:600px){.go2989568495{align-items:flex-end;}}@media (max-width:599.95px){.go2989568495{right:16px;}}.go4034260886{left:50%;transform:translateX(-50%);}@media (min-width:600px){.go4034260886{align-items:center;}}</style><style>.iZc1lq_i18nFontFamily{font-synthesis:weight;font-family:adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Trebuchet MS,Lucida Grande,sans-serif}.iZc1lq_i18nFontFamily:lang(ar){font-family:myriad-arabic,adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Trebuchet MS,Lucida Grande,sans-serif}.iZc1lq_i18nFontFamily:lang(he){font-family:myriad-hebrew,adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Trebuchet MS,Lucida Grande,sans-serif}.iZc1lq_i18nFontFamily:lang(zh){font-family:adobe-clean-han-traditional,source-han-traditional,MingLiu,Heiti TC Light,sans-serif}.iZc1lq_i18nFontFamily:lang(zh-Hans){font-family:adobe-clean-han-simplified-c,source-han-simplified-c,SimSun,Heiti SC Light,sans-serif}.iZc1lq_i18nFontFamily:lang(zh-Hant){font-family:adobe-clean-han-traditional,source-han-traditional,MingLiu,Microsoft JhengHei UI,Microsoft JhengHei,Heiti TC Light,sans-serif}.iZc1lq_i18nFontFamily:lang(zh-SG),.iZc1lq_i18nFontFamily:lang(zh-CN){font-family:adobe-clean-han-simplified-c,source-han-simplified-c,SimSun,Heiti SC Light,sans-serif}.iZc1lq_i18nFontFamily:lang(ko){font-family:adobe-clean-han-korean,source-han-korean,Malgun Gothic,Apple Gothic,sans-serif}.iZc1lq_i18nFontFamily:lang(ja){font-family:adobe-clean-han-japanese,Hiragino Kaku Gothic ProN,ヒラギノ角ゴ ProN W3,Osaka,YuGothic,Yu Gothic,メイリオ,Meiryo,ＭＳ Ｐゴシック,MS PGothic,sans-serif}.iZc1lq_spectrum-FocusRing-ring{--spectrum-focus-ring-border-radius:var(--spectrum-textfield-border-radius,var(--spectrum-alias-border-radius-regular));--spectrum-focus-ring-gap:var(--spectrum-alias-input-focusring-gap);--spectrum-focus-ring-size:var(--spectrum-alias-input-focusring-size);--spectrum-focus-ring-border-size:0px;--spectrum-focus-ring-color:var(--spectrum-high-contrast-focus-ring-color,var(--spectrum-alias-focus-ring-color,var(--spectrum-alias-focus-color)))}.iZc1lq_spectrum-FocusRing-ring:after{border-radius:calc(var(--spectrum-focus-ring-border-radius) + var(--spectrum-focus-ring-gap));content:"";margin:calc(-1 * var(--spectrum-focus-ring-border-size));pointer-events:none;transition:box-shadow var(--spectrum-global-animation-duration-100,.13s) ease-out, margin var(--spectrum-global-animation-duration-100,.13s) ease-out;display:block;position:absolute;inset:0}.iZc1lq_spectrum-FocusRing.iZc1lq_focus-ring:after{margin:calc(var(--spectrum-focus-ring-gap) * -1 - var(--spectrum-focus-ring-border-size));box-shadow:0 0 0 var(--spectrum-focus-ring-size) var(--spectrum-focus-ring-color)}.iZc1lq_spectrum-FocusRing--quiet:after{border-radius:0}.iZc1lq_spectrum-FocusRing--quiet.iZc1lq_focus-ring:after{margin:0 0 calc(var(--spectrum-focus-ring-gap) * -1 - var(--spectrum-focus-ring-border-size)) 0;box-shadow:0 var(--spectrum-focus-ring-size) 0 var(--spectrum-focus-ring-color)}@media (forced-colors:active){.iZc1lq_spectrum-FocusRing,.iZc1lq_spectrum-FocusRing-ring,.iZc1lq_spectrum-FocusRing--quiet{--spectrum-high-contrast-focus-ring-color:Highlight}:is(.iZc1lq_spectrum-FocusRing,.iZc1lq_spectrum-FocusRing-ring,.iZc1lq_spectrum-FocusRing--quiet):after{forced-color-adjust:none}}.iZc1lq_spectrum-CircleLoader--indeterminate-fill-submask-2{animation:1s linear infinite iZc1lq_spectrum-fill-mask-2}@keyframes iZc1lq_spectrum-fill-mask-1{0%{transform:rotate(90deg)}1.69%{transform:rotate(72.3deg)}3.39%{transform:rotate(55.5deg)}5.08%{transform:rotate(40.3deg)}6.78%{transform:rotate(25deg)}8.47%{transform:rotate(10.6deg)}10.17%{transform:rotate(0)}11.86%{transform:rotate(0)}13.56%{transform:rotate(0)}15.25%{transform:rotate(0)}16.95%{transform:rotate(0)}18.64%{transform:rotate(0)}20.34%{transform:rotate(0)}22.03%{transform:rotate(0)}23.73%{transform:rotate(0)}25.42%{transform:rotate(0)}27.12%{transform:rotate(0)}28.81%{transform:rotate(0)}30.51%{transform:rotate(0)}32.2%{transform:rotate(0)}33.9%{transform:rotate(0)}35.59%{transform:rotate(0)}37.29%{transform:rotate(0)}38.98%{transform:rotate(0)}40.68%{transform:rotate(0)}42.37%{transform:rotate(5.3deg)}44.07%{transform:rotate(13.4deg)}45.76%{transform:rotate(20.6deg)}47.46%{transform:rotate(29deg)}49.15%{transform:rotate(36.5deg)}50.85%{transform:rotate(42.6deg)}52.54%{transform:rotate(48.8deg)}54.24%{transform:rotate(54.2deg)}55.93%{transform:rotate(59.4deg)}57.63%{transform:rotate(63.2deg)}59.32%{transform:rotate(67.2deg)}61.02%{transform:rotate(70.8deg)}62.71%{transform:rotate(73.8deg)}64.41%{transform:rotate(76.2deg)}66.1%{transform:rotate(78.7deg)}67.8%{transform:rotate(80.6deg)}69.49%{transform:rotate(82.6deg)}71.19%{transform:rotate(83.7deg)}72.88%{transform:rotate(85deg)}74.58%{transform:rotate(86.3deg)}76.27%{transform:rotate(87deg)}77.97%{transform:rotate(87.7deg)}79.66%{transform:rotate(88.3deg)}81.36%{transform:rotate(88.6deg)}83.05%{transform:rotate(89.2deg)}84.75%{transform:rotate(89.2deg)}86.44%{transform:rotate(89.5deg)}88.14%{transform:rotate(89.9deg)}89.83%{transform:rotate(89.7deg)}91.53%{transform:rotate(90.1deg)}93.22%{transform:rotate(90.2deg)}94.92%{transform:rotate(90.1deg)}96.61%{transform:rotate(90deg)}98.31%{transform:rotate(89.8deg)}to{transform:rotate(90deg)}}@keyframes iZc1lq_spectrum-fill-mask-2{0%{transform:rotate(180deg)}1.69%{transform:rotate(180deg)}3.39%{transform:rotate(180deg)}5.08%{transform:rotate(180deg)}6.78%{transform:rotate(180deg)}8.47%{transform:rotate(180deg)}10.17%{transform:rotate(179.2deg)}11.86%{transform:rotate(164deg)}13.56%{transform:rotate(151.8deg)}15.25%{transform:rotate(140.8deg)}16.95%{transform:rotate(130.3deg)}18.64%{transform:rotate(120.4deg)}20.34%{transform:rotate(110.8deg)}22.03%{transform:rotate(101.6deg)}23.73%{transform:rotate(93.5deg)}25.42%{transform:rotate(85.4deg)}27.12%{transform:rotate(78.1deg)}28.81%{transform:rotate(71.2deg)}30.51%{transform:rotate(89.1deg)}32.2%{transform:rotate(105.5deg)}33.9%{transform:rotate(121.3deg)}35.59%{transform:rotate(135.5deg)}37.29%{transform:rotate(148.4deg)}38.98%{transform:rotate(161deg)}40.68%{transform:rotate(173.5deg)}42.37%{transform:rotate(180deg)}44.07%{transform:rotate(180deg)}45.76%{transform:rotate(180deg)}47.46%{transform:rotate(180deg)}49.15%{transform:rotate(180deg)}50.85%{transform:rotate(180deg)}52.54%{transform:rotate(180deg)}54.24%{transform:rotate(180deg)}55.93%{transform:rotate(180deg)}57.63%{transform:rotate(180deg)}59.32%{transform:rotate(180deg)}61.02%{transform:rotate(180deg)}62.71%{transform:rotate(180deg)}64.41%{transform:rotate(180deg)}66.1%{transform:rotate(180deg)}67.8%{transform:rotate(180deg)}69.49%{transform:rotate(180deg)}71.19%{transform:rotate(180deg)}72.88%{transform:rotate(180deg)}74.58%{transform:rotate(180deg)}76.27%{transform:rotate(180deg)}77.97%{transform:rotate(180deg)}79.66%{transform:rotate(180deg)}81.36%{transform:rotate(180deg)}83.05%{transform:rotate(180deg)}84.75%{transform:rotate(180deg)}86.44%{transform:rotate(180deg)}88.14%{transform:rotate(180deg)}89.83%{transform:rotate(180deg)}91.53%{transform:rotate(180deg)}93.22%{transform:rotate(180deg)}94.92%{transform:rotate(180deg)}96.61%{transform:rotate(180deg)}98.31%{transform:rotate(180deg)}to{transform:rotate(180deg)}}@keyframes iZc1lq_spectrum-fills-rotate{0%{transform:rotate(-90deg)}to{transform:rotate(270deg)}}.iZc1lq_spectrum-CircleLoader{width:var(--spectrum-loader-circle-medium-width,var(--spectrum-global-dimension-static-size-400));height:var(--spectrum-loader-circle-medium-height,var(--spectrum-global-dimension-static-size-400));direction:ltr;display:inline-block;position:relative}.iZc1lq_spectrum-CircleLoader-track{box-sizing:border-box;width:calc(var(--spectrum-loader-circle-medium-width,var(--spectrum-global-dimension-static-size-400)));height:calc(var(--spectrum-loader-circle-medium-height,var(--spectrum-global-dimension-static-size-400)));border-style:solid;border-width:var(--spectrum-loader-circle-medium-border-size);border-radius:var(--spectrum-loader-circle-medium-width,var(--spectrum-global-dimension-static-size-400))}.iZc1lq_spectrum-CircleLoader-fills{width:100%;height:100%;position:absolute;top:0;left:0}.iZc1lq_spectrum-CircleLoader-fill{box-sizing:border-box;width:calc(var(--spectrum-loader-circle-medium-width,var(--spectrum-global-dimension-static-size-400)));height:calc(var(--spectrum-loader-circle-medium-height,var(--spectrum-global-dimension-static-size-400)));border-style:solid;border-width:var(--spectrum-loader-circle-medium-border-size);border-radius:var(--spectrum-loader-circle-medium-width,var(--spectrum-global-dimension-static-size-400))}.iZc1lq_spectrum-CircleLoader-fillMask1,.iZc1lq_spectrum-CircleLoader-fillMask2{transform-origin:100%;width:50%;height:100%;position:absolute;overflow:hidden;transform:rotate(180deg)}.iZc1lq_spectrum-CircleLoader-fillSubMask1,.iZc1lq_spectrum-CircleLoader-fillSubMask2{transform-origin:100%;width:100%;height:100%;overflow:hidden;transform:rotate(-180deg)}.iZc1lq_spectrum-CircleLoader-fillMask2{transform:rotate(0)}.iZc1lq_spectrum-CircleLoader--small{width:var(--spectrum-loader-circle-small-width,var(--spectrum-global-dimension-static-size-200));height:var(--spectrum-loader-circle-small-height,var(--spectrum-global-dimension-static-size-200))}.iZc1lq_spectrum-CircleLoader--small .iZc1lq_spectrum-CircleLoader-track,.iZc1lq_spectrum-CircleLoader--small .iZc1lq_spectrum-CircleLoader-fill{width:calc(var(--spectrum-loader-circle-small-width,var(--spectrum-global-dimension-static-size-200)));height:calc(var(--spectrum-loader-circle-small-height,var(--spectrum-global-dimension-static-size-200)));border-style:solid;border-width:var(--spectrum-loader-circle-small-border-size);border-radius:var(--spectrum-loader-circle-small-width,var(--spectrum-global-dimension-static-size-200))}.iZc1lq_spectrum-CircleLoader--large{width:var(--spectrum-loader-circle-large-width,var(--spectrum-global-dimension-size-800));height:var(--spectrum-loader-circle-large-height,var(--spectrum-global-dimension-size-800))}.iZc1lq_spectrum-CircleLoader--large .iZc1lq_spectrum-CircleLoader-track,.iZc1lq_spectrum-CircleLoader--large .iZc1lq_spectrum-CircleLoader-fill{width:calc(var(--spectrum-loader-circle-large-width,var(--spectrum-global-dimension-size-800)));height:calc(var(--spectrum-loader-circle-large-height,var(--spectrum-global-dimension-size-800)));border-style:solid;border-width:var(--spectrum-loader-circle-large-border-size,var(--spectrum-global-dimension-size-50));border-radius:var(--spectrum-loader-circle-large-width,var(--spectrum-global-dimension-size-800))}.iZc1lq_spectrum-CircleLoader--indeterminate .iZc1lq_spectrum-CircleLoader-fills{will-change:transform;transform-origin:50%;animation:1s cubic-bezier(.25,.78,.48,.89) infinite iZc1lq_spectrum-fills-rotate;transform:translateZ(0)}.iZc1lq_spectrum-CircleLoader--indeterminate .iZc1lq_spectrum-CircleLoader-fillSubMask1{will-change:transform;animation:1s linear infinite iZc1lq_spectrum-fill-mask-1;transform:translateZ(0)}.iZc1lq_spectrum-CircleLoader--indeterminate .iZc1lq_spectrum-CircleLoader-fillSubMask2{will-change:transform;animation:1s linear infinite iZc1lq_spectrum-fill-mask-2;transform:translateZ(0)}.iZc1lq_spectrum-CircleLoader{--spectrum-loader-circle-medium-track-fill-color:var(--spectrum-accent-color-900);--spectrum-loader-circle-static-black-track-color:#00000040;--spectrum-loader-circle-static-black-fill-color:var(--spectrum-global-color-static-black,#000)}.iZc1lq_spectrum-CircleLoader-track{border-color:var(--spectrum-loader-circle-medium-track-color,var(--spectrum-alias-track-color-default))}.iZc1lq_spectrum-CircleLoader-fill{border-color:var(--spectrum-loader-circle-medium-track-fill-color,var(--spectrum-global-color-blue-500))}:is(.iZc1lq_spectrum-CircleLoader--overBackground,.iZc1lq_spectrum-CircleLoader--staticWhite) .iZc1lq_spectrum-CircleLoader-track{border-color:var(--spectrum-loader-circle-medium-over-background-track-color,var(--spectrum-alias-track-color-over-background))}:is(.iZc1lq_spectrum-CircleLoader--overBackground,.iZc1lq_spectrum-CircleLoader--staticWhite) .iZc1lq_spectrum-CircleLoader-fill{border-color:var(--spectrum-loader-circle-medium-over-background-track-fill-color,var(--spectrum-global-color-static-white))}.iZc1lq_spectrum-CircleLoader--staticBlack .iZc1lq_spectrum-CircleLoader-track{border-color:var(--spectrum-loader-circle-static-black-track-color)}.iZc1lq_spectrum-CircleLoader--staticBlack .iZc1lq_spectrum-CircleLoader-fill{border-color:var(--spectrum-loader-circle-static-black-fill-color)}@media (forced-colors:active){.iZc1lq_spectrum-CircleLoader{--spectrum-loader-circle-medium-track-fill-color:Highlight;--spectrum-loader-circle-medium-over-background-track-fill-color:Highlight;--spectrum-loader-circle-static-black-fill-color:Highlight;--spectrum-loader-circle-medium-track-color:Background;--spectrum-loader-circle-medium-over-background-track-color:Background;--spectrum-loader-circle-static-black-track-color:Background}}</style><style data-emotion="css" data-s=""></style><style type="text/css" id="CookieConsentStateDisplayStyles">.cookieconsent-optin-preferences,.cookieconsent-optin-statistics,.cookieconsent-optin-marketing,.cookieconsent-optin{display:none;}.cookieconsent-optout-preferences,.cookieconsent-optout-statistics,.cookieconsent-optout-marketing,.cookieconsent-optout{display:block;display:initial;}</style></head>
+<body class="zds-body " style="padding-top: 0px;"><div id="CybotCookiebotDialog" name="CybotCookiebotDialog" role="dialog" aria-modal="true" aria-labelledby="CybotCookiebotDialogBodyContentTitle" tabindex="-1" lang="en" dir="ltr" ng-non-bindable="" data-template="slideup" class="CybotEdge CybotCookiebotDialogActive" style="display: flex; font-size: 0.9375rem;"><div class="CybotCookiebotDialogContentWrapper"><div id="CybotCookiebotDialogHeader"><div id="CybotCookiebotDialogHeaderLogosWrapper"><div id="CybotCookiebotDialogPoweredbyLink"><img id="CybotCookiebotDialogPoweredbyImage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAAAuCAYAAADJAyyXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAlTSURBVHhe7dwHsCxFFcbxh2DOOWfFgIgZMecMlgkBMWdRFHMWE5hzVhRjKQa0AEVFBAOWWUsFFbW0MAdQLDAL329mz7PvvN1n1WPvfa+0v6p/3enend3Z6T6nT5/uuev+T3TBcKmw1VDq2iK0zezv2cLVw23DbuHR4cnhOeGp4b3haqFrC9Adw4fC9mHPsH+4X7hDuF64TDhnoHuF2wXv7dqMYj0vD9sFFvWJcKWwSNcJbw9vCvuGi4SuNRYrekO4/FAa9cLwnnCuobShrh2ODMa5ncIbZ3+71lDGrduPh+vF2jTcfkEjtTpzeEd48VAadfHAYh84lLpWXbuHx42HK3SF8PBwyfCycNewdaAnBeftHSqYKfms54caC7tWQQILjVIN0uo8gSXShcMHA7d45/C0QMZCr00laHlN0PhdS9ZZwrsCF7dIzwgsSkNdJbC+5wbiLp8XrjmUNpSgZdvxsGuZOn94Snh34AZ3DfuEZwZjF+t6SHhFYD23CCJN739U0KgCmHkW9/Rw6/Gwa5l6QnhRMIY5/kwQ0l86yIo8K5wveP2z4aFBw940vDS8JJw1EIsVvAhu7hm8/smg8W8YupaoaqSSQIKlVURocq2hWNS5VUykgT4QWONjgqyKOkELi2TNdwoavGuJemS47ni4Qo8IXKBG+EKQ8lqk+4QvhzZzwtpqIm58e/x42LUsyT1Kb82TjMjRgVVuTFcNxjKBy4ODQOXmoXShwIq7lqjbhPuOhytkbLtEkPnn9jYmEeYTx8PBXT5gPFwvUwzTiRoLu5YgIfxjx8P1cvM11gsCi5w3KW8l6pTy2phVsUgdoWtJEgkay0omzKLLkuMjgrnaIj0oHBbuHl4ZrhymkllZNM/r2gRxX9JSrEYA8rFg3U1QYrwSJX48iBrnWYwwn3WyUhGkRtN407mbAGbRWNq1iWJxGubzgbuz/rZLkOGvbIrIU6LZzb9+2Dk8LHwjmOcZJ03MWeY1wiFBCs1UwiTdikGfiK+CWJ3c41Qaz/jEqjTwN4MJtYa10CqTYv1ux/C24L3c6x5BQMKFamyN27Vkye7vNR5uINHiPYLtC9xg5Se5PhbEVd5bRXSO2d9WrG3RZ3edQclDiiCtAkwlc2LKwAVaYL1YuEng+ogLNYmfpysG7nLRAmzXEiSafH3YYSj9RybSpgSSzjVGSZFpaFZ3geC1qVjo60JfFVgDWTN7dSjXRzL+nwrTSTUJ8VmUTMlUxjoBTNcaydqc1JVAxBSBK9RwiyTwmOYyzeds3+vaDBKQiBiNZRLG81bGS9byzP+4W3lLVqsDdG0myXQI9aXEKnARpFw0mKvdMnCrVri912T9oLCxlfSuNZSGs2BqX8mzg/FL/tK4ZxxrAxrZk64tRFbCrbWZCnQX2NXV1dXV9T8gS/vSSeY39l/Mk8001rHWYnlf/tH1SEnNe67NKoG8ZG1HWG2Z7LseWFVoJXNjPum1/7aFYukSMp824yMqJrJD+JTwu3AmFass2wzqer4epnv+Pxy8dvhQWl2ZPvwj1PX8M7T5TXPFes1K/JpKz/XFv5r9tQDZyoYc9da3ptLjTGglbZchE+hjQ90M7BtafTWoN2drpYFdD6/RdjCpsU2VnWTttaBtIPeq6q0ZtuKdbAE0XWmv4Yxcz4pz3xl8sZTQH8JfgtRQyTKJ1+sGmivZZXV8OCn8MbBGDStjQVaq7Tq+3FAaZcPqR4Mf3j5kYVnFirT0lazHyUHP/m7wvY49ZUos4PdBfSWbrcO9Jfw6qMdPw6uCG6dBPQjieuQpS266OtfT7rk0mT8qmNC33qilktq+o+rKjVoD9PjyL4L6v4fvBav4OpZNvRZwfff7Q3V6Q5U62CdDHt78dFB3YFgxT/1a+PN4OCzl+7KvhMr/2duhrn60H+pmylDYJqCxLKH8JGhEFiib4Zw2k++ZNHVordripzpjmw7j+NTgs3UO5W8HMubVZ2gwD3jobMpulrU7yzhlld8JbsyXZmUNTBpUB6nPsieFdJCq0wBWGKrs5v17dvzbYMno4FkZrsf2dvdG+YfBk7D2xNR7XI/O9+OmTseVLK8yfC69NVRdu0lqWBXWaH5oqSzQg4JUN9xz1ZK7jlmU/KAexErOGzSS1wzS3uvYsgppXOX3hRNCuV2N/LdwzFAa95N438+H0rjGpgwB0s1mxxpLg0geK7s5GtVDjrC46nd5zbFEs2O9l/RuZd/jr99MPIJyjfU6gzJuNCk7Rwd3zONcNvxoVtYpWM2Ng9+gs9d5DOC1Tdn1srwqw/4amaA/zcrHhRU72Qy0XvDUZkkPqAu4QTgo6EUs8M1BvR/sYt1AcF8axBfV/kU3zk5jciFcsMb2ec4hCWCfx7rIAx7KnxtKo0SX6rhlzwE4dsO4nN/MyoInfwsBRTXc3YIFV8csl1v8a3Ctdoup13FcA4vi2lgyleWqY6VuZmupZV3Od6+q/l/NMep98NzD/WfH3ue5B9ejXIHXDwLXWufwRivkvxR4YRpacxPquSoNImAgYbh6lsHaBC6mE47tomIRlanXu/l5T9I4h9sh+zyU7bzyVy8uVY+3safEK3w/qC9YrgCkAirv56qMnbYk6OVWA9xMHZE1aEwdTCdyjlVy+mU4MZQ79RvJ7+AS1f0snD1QG5AUdpiVl4Hz/BcIHcY9ZmE6tGMu1tNE3qfhqoNpfAlxnce1VmO23nC9LCh68S5DaaWMYV5DuQ7uQlmD2knlhniQ3vYBvZ/LKrXnfytUpGdRUx0XaSzT+MSia0ybzol0pBpfUBGcQELZjzTP1Bl0kLKUephDgGLMqfN5i9rZdWioetZU+zPdxKr/oopGFm/rNfh3HdSOZzqbIaHGRo1UTwX5DlbcfgbPQOUei+kz74OYoxu+aO8FC9BLRVglkVZFfC01zpQ0sp7nJolMSxrIqrRApl2J5oq4aOeIcKfSY12r1ytQ0iCi3RqrCm75gKBjlViSa3G+p31KAil1aK/H41f1fvepFcvWyeq8CsKM9b6njXBhaDAm8gokrDdfrfNFsRXq81RVX0HKBuIOmO4i+TBucN5yiXGAS+IiuYl58tnz9iwan6ZZGo1gzoNFE32f5/XpirfPu1a4VbCHcl4GyLzKudPf235vK66x6ufNU31nvT69Hr9ZpOh6uOt519Oe395frr3qXVtXV9dm0rp1pwMx42dy7UFPSAAAAABJRU5ErkJggg==" alt="logo" width="46" height="34"></div><a href="https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&amp;utm_medium=referral&amp;utm_content=v2" rel="noopener nofollow" target="_blank" id="CybotCookiebotDialogPoweredbyCybot" aria-label="Cookiebot by Usercentrics - opens in a new window" tabindex="-1"><svg viewBox="0 0 843 248" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M249.651 182.059C246.815 181.906 243.999 182.606 241.573 184.067C239.147 185.528 237.225 187.681 236.06 190.244H235.469V167.003H226.162V229.564H235.174V222.256H235.912C237.11 224.825 239.06 226.979 241.51 228.439C243.959 229.898 246.796 230.596 249.651 230.441C261.174 230.441 269.447 221.379 269.447 206.177C269.447 190.975 261.174 182.059 249.651 182.059ZM247.731 222.694C239.753 222.694 235.321 215.97 235.321 206.031C235.321 196.091 239.606 189.659 247.731 189.659C256.151 189.659 260.288 196.676 260.288 206.031C260.288 215.386 256.004 222.694 247.731 222.694Z"></path><path d="M294.854 219.182H294.411L282.445 182.786H272.547L289.979 230.291L288.797 233.361C286.433 239.646 283.183 240.085 278.013 238.769L275.797 246.224C277.841 246.916 279.989 247.262 282.149 247.247C289.831 247.247 294.559 243.3 297.366 235.846L316.866 182.64H306.968L294.854 219.182Z"></path><path d="M385.555 207.488C385.555 215.966 379.646 222.105 370.044 222.105C360.441 222.105 354.532 215.966 354.532 207.488V167.145H344.93V208.365C344.93 221.52 354.828 230.875 370.044 230.875C385.26 230.875 395.158 221.52 395.158 208.365V167.145H385.555V207.488Z"></path><path d="M429.594 203.412L422.06 201.658C416.89 200.489 414.526 198.735 414.674 195.519C414.674 191.865 418.662 189.38 423.833 189.38C429.594 189.38 432.254 192.596 433.288 195.665L441.708 194.203C439.788 186.895 434.026 182.071 423.833 182.071C413.049 182.071 405.514 187.626 405.514 195.958C405.514 202.681 409.651 207.067 418.515 208.967L426.492 210.721C431.072 211.744 433.14 213.79 433.14 216.714C433.14 220.368 429.151 223.145 423.094 223.145C417.628 223.145 414.083 220.807 412.901 216.129L404.037 217.445C405.514 225.776 412.605 230.454 423.242 230.454C434.765 230.454 442.595 224.461 442.595 215.983C442.595 209.405 438.311 205.312 429.594 203.412Z"></path><path d="M470.358 182.071C457.062 182.071 448.494 192.011 448.494 206.482C448.494 220.953 457.062 230.6 471.097 230.6C481.438 230.6 488.824 225.484 490.892 217.883L482.176 216.275C480.551 220.66 476.563 222.999 471.244 222.999C463.267 222.999 457.949 217.883 457.801 208.821H491.483V205.605C491.336 188.649 481.142 182.071 470.358 182.071ZM457.653 202.097C458.097 195.373 462.972 189.672 470.358 189.672C477.744 189.672 482.176 194.934 482.324 202.097H457.653Z"></path><path d="M508.912 190.117H508.469V182.663H499.605V229.583H508.912V200.934C508.912 194.795 513.64 190.41 520.288 190.41C521.932 190.383 523.572 190.58 525.163 190.994V182.224C523.837 182.097 522.505 182.048 521.174 182.078C518.527 181.93 515.903 182.634 513.694 184.082C511.484 185.531 509.807 187.648 508.912 190.117Z"></path><path d="M549.091 189.818C551.519 189.708 553.908 190.456 555.83 191.929C557.752 193.402 559.081 195.504 559.58 197.858H568.592C567.557 188.357 559.728 182.071 548.943 182.071C535.5 182.071 526.932 192.011 526.932 206.336C526.932 220.66 535.205 230.6 549.091 230.6C560.319 230.6 567.557 223.876 568.592 214.814H559.58C559.106 217.18 557.784 219.298 555.856 220.775C553.928 222.253 551.526 222.991 549.091 222.853C541.261 222.853 536.239 216.421 536.239 206.189C536.239 195.958 541.261 189.818 549.091 189.818Z"></path><path d="M596.077 182.071C582.929 182.071 574.213 192.011 574.213 206.482C574.213 220.953 582.781 230.6 596.816 230.6C607.157 230.6 614.543 225.484 616.612 217.883L607.895 216.275C606.27 220.66 602.282 222.999 596.963 222.999C588.986 222.999 583.815 217.883 583.52 208.821H617.203V205.605C617.055 188.649 606.861 182.071 596.077 182.071ZM583.372 202.097C583.815 195.373 588.69 189.672 596.077 189.672C603.464 189.672 607.896 194.934 608.043 202.097H583.372Z"></path><path d="M648.673 182.071C641.582 182.071 636.854 185.287 634.638 190.257H634.047V182.656H625.184V229.577H634.491V201.658C634.491 194.204 639.07 189.818 645.57 189.818C651.775 189.818 655.616 193.911 655.616 200.635V229.431H664.923V199.612C664.775 188.21 658.275 182.071 648.673 182.071Z"></path><path d="M692.999 222.117C690.044 222.117 687.385 221.094 687.385 215.832V189.959H697.135V182.651H687.385V171.396H678.078V182.651H671.135V189.959H678.078V217.732C678.078 226.21 684.578 230.449 691.965 230.302C694.03 230.338 696.085 229.991 698.021 229.279L696.396 221.678C695.285 221.957 694.145 222.104 692.999 222.117V222.117Z"></path><path d="M714.571 190.117H714.127V182.663H705.264V229.583H714.571V200.934C714.571 194.795 719.298 190.41 725.945 190.41C727.59 190.383 729.23 190.58 730.821 190.994V182.224C729.495 182.097 728.163 182.048 726.832 182.078C724.185 181.93 721.561 182.634 719.352 184.082C717.142 185.531 715.465 187.648 714.571 190.117V190.117Z"></path><path d="M741.007 164.516C739.502 164.472 738.04 165.014 736.935 166.025C735.83 167.036 735.171 168.436 735.098 169.924C735.122 170.664 735.295 171.393 735.606 172.066C735.918 172.74 736.361 173.346 736.911 173.849C737.46 174.352 738.105 174.742 738.808 174.997C739.512 175.251 740.259 175.365 741.007 175.332C741.758 175.387 742.513 175.288 743.224 175.041C743.935 174.794 744.587 174.404 745.139 173.897C745.692 173.389 746.132 172.774 746.433 172.091C746.734 171.407 746.89 170.67 746.89 169.924C746.89 169.178 746.734 168.441 746.433 167.757C746.132 167.073 745.692 166.459 745.139 165.951C744.587 165.444 743.935 165.054 743.224 164.807C742.513 164.56 741.758 164.461 741.007 164.516V164.516Z"></path><path d="M745.739 182.64H736.432V229.56H745.739V182.64Z"></path><path d="M775.853 189.818C778.281 189.708 780.67 190.456 782.591 191.929C784.513 193.402 785.842 195.504 786.341 197.858H795.353C794.319 188.357 786.489 182.071 775.705 182.071C762.262 182.071 753.693 192.011 753.693 206.336C753.693 220.66 761.966 230.6 775.853 230.6C787.08 230.6 794.319 223.876 795.353 214.814H786.341C785.868 217.18 784.545 219.298 782.617 220.775C780.69 222.253 778.287 222.991 775.853 222.853C768.023 222.853 763 216.421 763 206.189C763 195.958 768.171 189.818 775.853 189.818Z"></path><path d="M826.532 203.412L818.998 201.658C813.827 200.489 811.463 198.735 811.611 195.519C811.611 191.865 815.6 189.38 820.771 189.38C826.532 189.38 829.191 192.596 830.225 195.665L838.646 194.203C836.725 186.895 830.964 182.071 820.771 182.071C809.986 182.071 802.452 187.626 802.452 195.958C802.452 202.681 806.588 207.067 815.452 208.967L823.43 210.721C828.009 211.744 830.078 213.79 830.078 216.714C830.078 220.368 826.089 223.145 820.032 223.145C814.566 223.145 811.02 220.807 809.838 216.129L800.975 217.445C802.452 225.776 809.543 230.454 820.18 230.454C831.703 230.454 839.532 224.461 839.532 215.983C839.532 209.405 835.248 205.312 826.532 203.412Z"></path><path d="M428.098 136.595L388.359 84.2654L426.916 40.5603H395.45L359.108 83.6807V4.01758H333.551V136.741H359.108V112.184L370.483 100.198L396.041 136.741H428.098V136.595Z"></path><path d="M444.939 30.9215H445.382C449.435 30.8502 453.301 29.2257 456.167 26.3901C459.032 23.5545 460.674 19.7292 460.746 15.7197C460.674 11.7103 459.032 7.88492 456.167 5.04934C453.301 2.21377 449.435 0.589264 445.382 0.517951C441.375 0.490103 437.518 2.02279 434.644 4.78502C431.769 7.54725 430.108 11.3174 430.019 15.2812V15.7197C429.979 17.6899 430.335 19.6482 431.066 21.4814C431.796 23.3146 432.887 24.9863 434.274 26.3999C435.662 27.8135 437.319 28.941 439.149 29.7171C440.98 30.4932 442.948 30.9026 444.939 30.9215V30.9215Z"></path><path d="M432.086 137.925H456.905V41.7441H432.086V137.925Z"></path><path d="M794.165 113.808C794.165 131.495 803.767 140.411 821.642 140.411C829.047 140.746 836.374 138.806 842.62 134.857L837.597 115.855C834.995 117.617 831.883 118.489 828.733 118.34H828.142C825.606 117.97 823.317 116.629 821.77 114.606C820.222 112.583 819.54 110.039 819.87 107.523V63.964H839.665V41.8922H819.87V15.2891H794.312V41.8922H778.357V63.964H794.312V113.808H794.165Z"></path><path d="M601.247 125.337C604.819 129.867 609.393 133.526 614.617 136.035C619.841 138.543 625.577 139.834 631.384 139.808C655.611 139.808 674.225 121.537 674.225 89.233C674.225 57.66 655.759 38.6578 631.384 38.6578C625.58 38.6472 619.849 39.9448 614.627 42.4522C609.406 44.9595 604.83 48.6107 601.247 53.1287V3.86914H575.689V136.592H601.247V125.337ZM601.247 72.131C603.744 68.7245 607.003 65.9359 610.771 63.9834C614.538 62.0308 618.711 60.9672 622.963 60.8758C637.588 60.8758 647.191 72.131 647.191 88.6483C647.191 105.166 637.588 116.421 622.963 116.421C618.752 116.364 614.608 115.361 610.846 113.487C607.084 111.613 603.801 108.918 601.247 105.604V72.131Z"></path><path d="M533.583 111.188C528.083 114.821 521.394 116.253 514.868 115.195C508.341 114.137 502.464 110.667 498.423 105.487L560.47 70.1137L557.959 65.1439C542.004 38.1023 514.526 29.0397 489.56 43.0721C488.821 43.5106 488.082 43.9491 487.491 44.3876C481.985 47.7516 477.206 52.1599 473.428 57.3587C469.651 62.5575 466.95 68.4442 465.481 74.6799C464.012 80.9157 463.803 87.3773 464.868 93.693C465.933 100.009 468.249 106.054 471.684 111.48C472.423 112.796 473.162 113.965 473.753 115.134C477.248 120.525 481.785 125.181 487.102 128.835C492.419 132.488 498.412 135.068 504.739 136.426C511.065 137.784 517.6 137.893 523.97 136.748C530.339 135.602 536.417 133.225 541.856 129.751C554.233 123.118 563.817 112.339 568.891 99.3479L551.015 90.5776C547.936 99.3191 541.737 106.648 533.583 111.188ZM499.753 60.1741C499.901 60.0279 500.049 60.0279 500.196 59.8817C502.689 58.3111 505.473 57.2495 508.386 56.7594C511.299 56.2693 514.282 56.3607 517.159 57.028C520.036 57.6954 522.749 58.9253 525.138 60.6454C527.527 62.3655 529.545 64.5411 531.072 67.0441L490.151 90.5776C487.573 85.247 487.131 79.1486 488.912 73.5083C490.693 67.868 494.567 63.104 499.753 60.1741V60.1741Z"></path><path d="M122.747 125.073C117.827 130.28 111.88 134.432 105.273 137.273C98.6668 140.114 91.5411 141.584 84.3374 141.59C70.0953 141.552 56.4521 135.916 46.4091 125.925C36.3661 115.933 30.7461 102.403 30.7852 88.3111C30.8244 74.2193 36.5196 60.7201 46.618 50.7831C56.7164 40.8461 70.3907 35.2853 84.6328 35.3241C98.6314 35.3093 112.068 40.7741 122.009 50.5259C128.016 42.2847 135.914 35.5718 145.054 30.939C133.725 18.5119 118.836 9.79775 102.373 5.9589C85.9098 2.12005 68.655 3.33893 52.9099 9.45299C37.1648 15.567 23.6779 26.2856 14.2481 40.1792C4.81822 54.0727 -0.106318 70.4807 0.131255 87.2148C-0.0261505 109.171 8.62812 130.291 24.1941 145.94C39.7602 161.588 60.9657 170.485 83.1555 170.678H83.7464C95.4187 170.591 106.949 168.132 117.621 163.456C128.294 158.779 137.883 151.984 145.793 143.491C136.936 138.95 129.097 132.686 122.747 125.073V125.073Z"></path><path d="M170.624 36.9093C157.088 37.0838 144.175 42.5718 134.728 52.1661C125.281 61.7605 120.072 74.6752 120.248 88.0691C120.425 101.463 125.971 114.239 135.668 123.587C145.365 132.934 158.417 138.088 171.954 137.913C172.102 137.913 172.102 137.913 172.102 138.06C185.533 137.921 198.362 132.52 207.776 123.04C217.191 113.56 222.425 100.775 222.33 87.4845V86.7536C222.259 80.1169 220.863 73.5595 218.223 67.458C215.583 61.3566 211.751 55.8314 206.946 51.1998C202.141 46.5682 196.459 42.9214 190.226 40.469C183.993 38.0166 177.332 36.8069 170.624 36.9093ZM171.954 113.795C164.854 113.697 158.073 110.863 153.052 105.895C148.031 100.927 145.166 94.2171 145.067 87.1921C145.067 81.9305 146.644 76.7871 149.598 72.4122C152.553 68.0374 156.752 64.6276 161.665 62.614C166.578 60.6005 171.984 60.0737 177.199 61.1002C182.415 62.1267 187.206 64.6604 190.966 68.3809C194.726 72.1014 197.287 76.8416 198.324 82.0021C199.362 87.1626 198.829 92.5116 196.794 97.3727C194.759 102.234 191.313 106.389 186.892 109.312C182.47 112.235 177.272 113.795 171.954 113.795V113.795Z"></path><path d="M276.685 36.9093C269.982 36.9957 263.362 38.3875 257.203 41.0053C251.044 43.623 245.466 47.4155 240.788 52.1661C231.341 61.7605 226.133 74.6752 226.309 88.0691C226.485 101.463 232.032 114.239 241.729 123.587C251.425 132.934 264.478 138.088 278.015 137.913C278.162 137.913 278.162 137.913 278.162 138.06C291.594 137.921 304.422 132.52 313.837 123.04C323.252 113.56 328.485 100.775 328.39 87.4845V86.7536C328.319 80.1169 326.924 73.5595 324.284 67.458C321.643 61.3566 317.811 55.8314 313.006 51.1998C308.202 46.5682 302.52 42.9214 296.287 40.469C290.054 38.0166 283.392 36.8069 276.685 36.9093V36.9093ZM278.015 113.795C270.908 113.719 264.113 110.892 259.088 105.919C254.062 100.947 251.204 94.2241 251.128 87.1921C251.128 81.9305 252.705 76.7871 255.659 72.4122C258.613 68.0374 262.812 64.6276 267.725 62.614C272.638 60.6005 278.044 60.0737 283.26 61.1002C288.475 62.1267 293.266 64.6604 297.026 68.3809C300.787 72.1014 303.347 76.8416 304.385 82.0021C305.422 87.1626 304.89 92.5116 302.855 97.3727C300.82 102.234 297.374 106.389 292.952 109.312C288.531 112.235 283.332 113.795 278.015 113.795V113.795Z"></path><path d="M729.639 137.91C736.297 137.885 742.885 136.56 749.024 134.009C755.163 131.459 760.733 127.734 765.413 123.049C770.094 118.363 773.793 112.809 776.299 106.706C778.805 100.602 780.067 94.0688 780.015 87.4811V86.7502C779.883 76.7631 776.76 67.039 771.043 58.8076C765.325 50.5763 757.269 44.2072 747.893 40.5059C738.517 36.8045 728.243 35.9371 718.369 38.0133C708.495 40.0895 699.464 45.016 692.42 52.17C685.376 59.3239 680.633 68.384 678.793 78.2046C676.953 88.0252 678.097 98.1652 682.08 107.343C686.064 116.52 692.709 124.322 701.174 129.763C709.639 135.204 719.545 138.039 729.639 137.91V137.91ZM730.377 60.7318C737.508 60.7318 744.347 63.5346 749.389 68.5237C754.432 73.5127 757.264 80.2793 757.264 87.3349C757.264 94.3905 754.432 101.157 749.389 106.146C744.347 111.135 737.508 113.938 730.377 113.938C723.247 113.938 716.408 111.135 711.366 106.146C706.323 101.157 703.491 94.3905 703.491 87.3349C703.491 80.2793 706.323 73.5127 711.366 68.5237C716.408 63.5346 723.247 60.7318 730.377 60.7318Z"></path></svg></a></div></div><div id="CybotCookiebotDialogNav" class="CybotCookiebotScrollAreaSide"><div class="CybotCookiebotFader CybotCookiebotFaderLeft"></div><div class="CybotCookiebotFader CybotCookiebotFaderRight"></div><ul id="CybotCookiebotDialogNavList" class="CybotCookiebotDialogNavItems" role="tablist"><li class="CybotCookiebotDialogNavItem" role="presentation"><a id="CybotCookiebotDialogNavDeclaration" class="CybotCookiebotDialogNavItemLink CybotCookiebotDialogActive" href="#" data-target="CybotCookiebotDialogBody" tabindex="0" role="tab" aria-selected="false" aria-controls="CybotCookiebotDialogBody" lang="en">Consent</a></li><li class="CybotCookiebotDialogNavItem" role="presentation"><a id="CybotCookiebotDialogNavDetails" class="CybotCookiebotDialogNavItemLink" href="#" data-target="CybotCookiebotDialogTabContentDetails" tabindex="-1" role="tab" aria-selected="false" aria-controls="CybotCookiebotDialogTabContentDetails" lang="en">Details</a></li><li id="CybotCookiebotDialogNavItemAdSettings" class="CybotCookiebotDialogNavItem CybotCookiebotDialogHide" role="presentation"><a id="CybotCookiebotDialogNavAdSettings" class="CybotCookiebotDialogNavItemLink" href="#" data-target="CybotCookiebotDialogDetailBodyContentTextIABv2" tabindex="-1" role="tab" aria-selected="false" aria-controls="CybotCookiebotDialogDetailBodyContentTextIABv2" lang="en">[#IABV2SETTINGS#]</a></li><li class="CybotCookiebotDialogNavItem" role="presentation"><a id="CybotCookiebotDialogNavAbout" class="CybotCookiebotDialogNavItemLink" href="#" data-target="CybotCookiebotDialogDetailBodyContentTextAbout" tabindex="-1" role="tab" aria-selected="false" aria-controls="CybotCookiebotDialogDetailBodyContentTextAbout" lang="en">About</a></li></ul></div><div id="CybotCookiebotDialogTabContent"><div id="CybotCookiebotDialogBody" class="CybotCookiebotDialogTabPanel" role="tabpanel" aria-labelledby="CybotCookiebotDialogNavDeclaration" lang="en"><div class="CybotCookiebotScrollContainer"><div id="CybotCookiebotDialogBodyContent" class="CybotCookiebotScrollArea"><div class="CybotCookiebotFader" aria-hidden="true"></div><div id="CybotCookiebotDialogBodyContentTitle" class="CybotCookiebotDialogBodyContentHeading" lang="en" role="heading" aria-level="2">This website uses cookies</div><div id="CybotCookiebotDialogBodyContentText" lang="en">We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.&nbsp;More information about cookies and NewNewNew's use of personal data can be found&nbsp;<a href="https://www.mosaicworld.eu/en-gb/cookie-statement">here</a>.</div></div><div class="CybotCookiebotScrollbarContainer"></div></div><div class="CybotCookiebotDialogGpcContainer" style="display: none;"><div id="CybotCookiebotDialogGpcIcon">[#GPC_BANNER_ICON#]</div><div class="CybotCookiebotDialogGpcText" lang="en">[#GPC_TOAST_TEXT#]</div></div><div class="CybotCookiebotDialogBodyBottomWrapper"><div id="CybotCookiebotDialogBodyLevelWrapper" class="CybotCookiebotDialogHide"><div id="CybotCookiebotDialogBodyLevelButtons"><div id="CybotCookiebotDialogBodyLevelButtonsTable"><div id="CybotCookiebotDialogBodyLevelButtonsRow"><div id="CybotCookiebotDialogBodyLevelButtonsSelectPane"><div role="group" aria-labelledby="CybotCookiebotDialogBodyLevelButtonsSelectPaneLegend"><span id="CybotCookiebotDialogBodyLevelButtonsSelectPaneLegend" class="visuallyhidden">Consent Selection</span><div id="CybotCookiebotDialogBodyFieldsetInnerContainer"><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><label class="CybotCookiebotDialogBodyLevelButtonLabel" for="CybotCookiebotDialogBodyLevelButtonNecessary"><strong class="CybotCookiebotDialogBodyLevelButtonDescription">Necessary</strong></label><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper CybotCookiebotDialogBodyLevelButtonSliderWrapperDisabled"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessary" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled" disabled="disabled" checked="checked"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></div></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><label class="CybotCookiebotDialogBodyLevelButtonLabel" for="CybotCookiebotDialogBodyLevelButtonPreferences"><strong class="CybotCookiebotDialogBodyLevelButtonDescription">Preferences</strong></label><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferences" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonPreferencesInline" checked="checked" tabindex="0" role="switch"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></div></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><label class="CybotCookiebotDialogBodyLevelButtonLabel" for="CybotCookiebotDialogBodyLevelButtonStatistics"><strong class="CybotCookiebotDialogBodyLevelButtonDescription">Statistics</strong></label><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatistics" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonStatisticsInline" checked="checked" tabindex="0" role="switch"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></div></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><label class="CybotCookiebotDialogBodyLevelButtonLabel" for="CybotCookiebotDialogBodyLevelButtonMarketing"><strong class="CybotCookiebotDialogBodyLevelButtonDescription">Marketing</strong></label><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketing" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonMarketingInline" checked="checked" tabindex="0" role="switch"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></div></div></div></div></div></div></div></div></div><div id="CybotCookiebotDialogBodyEdgeMoreDetails"><a id="CybotCookiebotDialogBodyEdgeMoreDetailsLink" href="#" class="">Show details</a></div></div></div><div class="CybotCookiebotScrollContainer CybotCookiebotDialogHide"><div id="CybotCookiebotDialogTabContentDetails" class="CybotCookiebotDialogTabPanel CybotCookiebotDialogHide CybotCookiebotScrollArea" role="tabpanel" aria-labelledby="CybotCookiebotDialogNavDetails" lang="en"><div class="CybotCookiebotFader" aria-hidden="true"></div><div class="CybotCookiebotDialogSROnly" role="heading" aria-level="2">Details</div><div id="CybotCookiebotDialogDetailBody"><div id="CybotCookiebotDialogDetailBodyContent"><div id="CybotCookiebotDialogDetailBodyContentTextOverview" lang="en"><div id="CybotCookiebotDialogDetailBodyContentCookieContainer"><ul id="CybotCookiebotDialogDetailBodyContentCookieContainerTypes"><li class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerNecessaryCard"><div class="CybotCookiebotDialogDetailBodyContentCookieContainerHeader"><button id="CybotCookiebotDialogDetailBodyContentCookieContainerNecessary" class="CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed" lang="en" data-target="CybotCookiebotDialogDetailBodyContentCookieTabsNecessary" aria-label="Necessary (7)" aria-controls="CybotCookiebotDialogDetailBodyContentCookieTabsNecessary" aria-expanded="false"><span id="CybotCookiebotDialogBodyLevelButtonNecessaryInlineLabel" role="heading" aria-level="3">Necessary </span> <span class="CybotCookiebotDialogDetailBulkConsentCount">7</span></button><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper CybotCookiebotDialogBodyLevelButtonSliderWrapperDisabled"><div role="group" class="CybotCookiebotDialogBodyLevelButtonSliderWrapperFullWidth"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessaryInline" aria-labelledby="CybotCookiebotDialogBodyLevelButtonNecessaryInlineLabel" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled" disabled="disabled" checked="checked" role="switch" aria-checked="true"> <span class="CybotCookiebotDialogBodyLevelButtonSlider" aria-hidden="true"></span></div></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsNecessary" class="CollapseCard CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><ul class="CybotCookiebotDialogDetailBodyContentCookieTabContent"><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">Cloudflare<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">1</div></a><a class="CybotCookiebotDialogDetailBodyContentCookieLink" target="_blank" rel="noopener noreferrer nofollow" aria-label="Learn more about this provider - opens in a new window" href="https://www.cloudflare.com/privacypolicy/" title="Learn more about this provider Cloudflare's privacy policy - opens in a new window">Learn more about this provider<img class="CybotExternalLinkArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgBpdTdCcMgEAdwT/vk04EOkBG6QifpHH3rCF2hk3SVvBaEuoDYu4IgRRMv/iEkD/Hn+QnOuatS6gEAqDoJIQC/vfe594+m576FjAZKL6XXkSDiYox5UQFLXZEoNZJzXg9B/0hK6SKGWkiMcRVBewjnNIuURdIzyFBFo0jZPnoGqaMbCEqRJkSNIiFPCfILj7F1GLkySfvuqnFlShDxWesF6D76zF4jPJ/GWvum7/NRjBCegtsXQuuTY/odOJIAAAAASUVORK5CYII=" alt="opens in a new window"></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">cf.turnstile.u</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">This cookie is used to distinguish between humans and bots. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Persistent</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML Local Storage</span></div></div></div></li><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">Google<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">1</div></a><a class="CybotCookiebotDialogDetailBodyContentCookieLink" target="_blank" rel="noopener noreferrer nofollow" aria-label="Learn more about this provider - opens in a new window" href="https://business.safety.google/privacy/" title="Learn more about this provider Google's privacy policy - opens in a new window">Learn more about this provider<img class="CybotExternalLinkArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgBpdTdCcMgEAdwT/vk04EOkBG6QifpHH3rCF2hk3SVvBaEuoDYu4IgRRMv/iEkD/Hn+QnOuatS6gEAqDoJIQC/vfe594+m576FjAZKL6XXkSDiYox5UQFLXZEoNZJzXg9B/0hK6SKGWkiMcRVBewjnNIuURdIzyFBFo0jZPnoGqaMbCEqRJkSNIiFPCfILj7F1GLkySfvuqnFlShDxWesF6D76zF4jPJ/GWvum7/NRjBCegtsXQuuTY/odOJIAAAAASUVORK5CYII=" alt="opens in a new window"></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><p class="CybotCookiebotDialogDetailBodyContentCookieProviderDescription">Some of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.</p><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">test_cookie</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used to check if the user's browser supports cookies.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 1 day</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div></div></li><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#"><div>connection.newnewnew.space<br>consent.cookiebot.eu<br></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">2</div></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">CookieConsent&nbsp;[x2]</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Stores the user's cookie consent state for the current domain</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 1 year</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div></div></li><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">plaza.newnewnew.space<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">1</div></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">fe_typo_user</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Preserves users states across page requests.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div></div></li><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#"><div>sdk.zig365.nl<br>plaza.newnewnew.space<br></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">2</div></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">__cf_bm&nbsp;[x2]</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 1 day</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div></div></li></ul></div></div></div></li><li class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerPreferenceCard"><div class="CybotCookiebotDialogDetailBodyContentCookieContainerHeader"><button id="CybotCookiebotDialogDetailBodyContentCookieContainerPreference" class="CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed" lang="en" data-target="CybotCookiebotDialogDetailBodyContentCookieTabsPreference" aria-label="Preferences (1)" aria-controls="CybotCookiebotDialogDetailBodyContentCookieTabsPreference" aria-expanded="false"><span id="CybotCookiebotDialogBodyLevelButtonPreferencesInlineLabel" role="heading" aria-level="3">Preferences </span> <span class="CybotCookiebotDialogDetailBulkConsentCount">1</span></button><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><div role="group" class="CybotCookiebotDialogBodyLevelButtonSliderWrapperFullWidth"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferencesInline" aria-labelledby="CybotCookiebotDialogBodyLevelButtonPreferencesInlineLabel" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonPreferences" checked="checked" tabindex="0" role="switch"> <span class="CybotCookiebotDialogBodyLevelButtonSlider" aria-hidden="true"></span></div></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.</div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsPreference" class="CollapseCard CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><ul class="CybotCookiebotDialogDetailBodyContentCookieTabContent"><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">plaza.newnewnew.space<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">1</div></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">i18nextLng</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Determines the preferred language of the visitor. Allows the website to set the preferred language upon the visitor's re-entry. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Persistent</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML Local Storage</span></div></div></div></li></ul></div></div></div></li><li class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerStatisticsCard"><div class="CybotCookiebotDialogDetailBodyContentCookieContainerHeader"><button id="CybotCookiebotDialogDetailBodyContentCookieContainerStatistics" class="CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed" lang="en" data-target="CybotCookiebotDialogDetailBodyContentCookieTabsStatistics" aria-label="Statistics (5)" aria-controls="CybotCookiebotDialogDetailBodyContentCookieTabsStatistics" aria-expanded="false"><span id="CybotCookiebotDialogBodyLevelButtonStatisticsInlineLabel" role="heading" aria-level="3">Statistics </span> <span class="CybotCookiebotDialogDetailBulkConsentCount">5</span></button><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><div role="group" class="CybotCookiebotDialogBodyLevelButtonSliderWrapperFullWidth"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatisticsInline" aria-labelledby="CybotCookiebotDialogBodyLevelButtonStatisticsInlineLabel" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonStatistics" checked="checked" tabindex="0" role="switch"> <span class="CybotCookiebotDialogBodyLevelButtonSlider" aria-hidden="true"></span></div></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.</div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsStatistics" class="CollapseCard CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><ul class="CybotCookiebotDialogDetailBodyContentCookieTabContent"><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">TikTok<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">1</div></a><a class="CybotCookiebotDialogDetailBodyContentCookieLink" target="_blank" rel="noopener noreferrer nofollow" aria-label="Learn more about this provider - opens in a new window" href="https://www.tiktok.com/legal/privacy-policy?lang=en" title="Learn more about this provider TikTok's privacy policy - opens in a new window">Learn more about this provider<img class="CybotExternalLinkArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgBpdTdCcMgEAdwT/vk04EOkBG6QifpHH3rCF2hk3SVvBaEuoDYu4IgRRMv/iEkD/Hn+QnOuatS6gEAqDoJIQC/vfe594+m576FjAZKL6XXkSDiYox5UQFLXZEoNZJzXg9B/0hK6SKGWkiMcRVBewjnNIuURdIzyFBFo0jZPnoGqaMbCEqRJkSNIiFPCfILj7F1GLkySfvuqnFlShDxWesF6D76zF4jPJ/GWvum7/NRjBCegtsXQuuTY/odOJIAAAAASUVORK5CYII=" alt="opens in a new window"></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">_tt_enable_cookie</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by the social networking service, TikTok, for tracking the use of embedded services.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 1 year</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div></div></li><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">newnewnew.space<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">4</div></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">FPAU</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Assigns a specific ID to the visitor. This allows the website to determine the number of specific user-visits for analysis and statistics.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 3 months</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">FPGSID</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 1 day</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">FPID</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 400 days</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">FPLC</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 1 day</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div></div></li></ul></div></div></div></li><li class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerAdvertisingCard"><div class="CybotCookiebotDialogDetailBodyContentCookieContainerHeader"><button id="CybotCookiebotDialogDetailBodyContentCookieContainerAdvertising" class="CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed" lang="en" data-target="CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising" aria-label="Marketing (19)" aria-controls="CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising" aria-expanded="false"><span id="CybotCookiebotDialogBodyLevelButtonMarketingInlineLabel" role="heading" aria-level="3">Marketing </span> <span class="CybotCookiebotDialogDetailBulkConsentCount">19</span></button><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><div role="group" class="CybotCookiebotDialogBodyLevelButtonSliderWrapperFullWidth"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketingInline" aria-labelledby="CybotCookiebotDialogBodyLevelButtonMarketingInlineLabel" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonMarketing" checked="checked" tabindex="0" role="switch"> <span class="CybotCookiebotDialogBodyLevelButtonSlider" aria-hidden="true"></span></div></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising" class="CollapseCard CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><ul class="CybotCookiebotDialogDetailBodyContentCookieTabContent"><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">Amazon<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">2</div></a><a class="CybotCookiebotDialogDetailBodyContentCookieLink" target="_blank" rel="noopener noreferrer nofollow" aria-label="Learn more about this provider - opens in a new window" href="https://www.amazon.com/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&amp;nodeId=468496" title="Learn more about this provider Amazon's privacy policy - opens in a new window">Learn more about this provider<img class="CybotExternalLinkArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgBpdTdCcMgEAdwT/vk04EOkBG6QifpHH3rCF2hk3SVvBaEuoDYu4IgRRMv/iEkD/Hn+QnOuatS6gEAqDoJIQC/vfe594+m576FjAZKL6XXkSDiYox5UQFLXZEoNZJzXg9B/0hK6SKGWkiMcRVBewjnNIuURdIzyFBFo0jZPnoGqaMbCEqRJkSNIiFPCfILj7F1GLkySfvuqnFlShDxWesF6D76zF4jPJ/GWvum7/NRjBCegtsXQuuTY/odOJIAAAAASUVORK5CYII=" alt="opens in a new window"></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">_fbp&nbsp;[x2]</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 3 months</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div></div></li><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">Google<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">4</div></a><a class="CybotCookiebotDialogDetailBodyContentCookieLink" target="_blank" rel="noopener noreferrer nofollow" aria-label="Learn more about this provider - opens in a new window" href="https://business.safety.google/privacy/" title="Learn more about this provider Google's privacy policy - opens in a new window">Learn more about this provider<img class="CybotExternalLinkArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgBpdTdCcMgEAdwT/vk04EOkBG6QifpHH3rCF2hk3SVvBaEuoDYu4IgRRMv/iEkD/Hn+QnOuatS6gEAqDoJIQC/vfe594+m576FjAZKL6XXkSDiYox5UQFLXZEoNZJzXg9B/0hK6SKGWkiMcRVBewjnNIuURdIzyFBFo0jZPnoGqaMbCEqRJkSNIiFPCfILj7F1GLkySfvuqnFlShDxWesF6D76zF4jPJ/GWvum7/NRjBCegtsXQuuTY/odOJIAAAAASUVORK5CYII=" alt="opens in a new window"></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><p class="CybotCookiebotDialogDetailBodyContentCookieProviderDescription">Some of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.</p><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">IDE</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 400 days</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">ads/ga-audiences</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by Google AdWords to re-engage visitors that are likely to convert to customers based on the visitor's online behaviour across websites.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: Pixel Tracker</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">pagead/1p-conversion/#/</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: Pixel Tracker</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">pagead/1p-user-list/#</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Tracks if the user has shown interest in specific products or events across multiple websites and detects how the user navigates between sites. This is used for measurement of advertisement efforts and facilitates payment of referral-fees between websites.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: Pixel Tracker</span></div></div></div></li><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">TikTok<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">7</div></a><a class="CybotCookiebotDialogDetailBodyContentCookieLink" target="_blank" rel="noopener noreferrer nofollow" aria-label="Learn more about this provider - opens in a new window" href="https://www.tiktok.com/legal/privacy-policy?lang=en" title="Learn more about this provider TikTok's privacy policy - opens in a new window">Learn more about this provider<img class="CybotExternalLinkArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgBpdTdCcMgEAdwT/vk04EOkBG6QifpHH3rCF2hk3SVvBaEuoDYu4IgRRMv/iEkD/Hn+QnOuatS6gEAqDoJIQC/vfe594+m576FjAZKL6XXkSDiYox5UQFLXZEoNZJzXg9B/0hK6SKGWkiMcRVBewjnNIuURdIzyFBFo0jZPnoGqaMbCEqRJkSNIiFPCfILj7F1GLkySfvuqnFlShDxWesF6D76zF4jPJ/GWvum7/NRjBCegtsXQuuTY/odOJIAAAAASUVORK5CYII=" alt="opens in a new window"></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">tt_appInfo</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by the social networking service, TikTok, for tracking the use of embedded services.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML Local Storage</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">tt_pixel_session_index</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by the social networking service, TikTok, for tracking the use of embedded services.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML Local Storage</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">tt_sessionId</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by the social networking service, TikTok, for tracking the use of embedded services.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML Local Storage</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">_ttp&nbsp;[x2]</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by the social networking service, TikTok, for tracking the use of embedded services.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 1 year</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">ttcsid</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 1 year</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">ttcsid_#</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 1 year</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div></div></li><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">connection.newnewnew.space<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">5</div></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">_/set_cookie</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by server-side Google Tag Manager to set or update cookies required for analytics or marketing tags.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: Pixel Tracker</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">_gcl_ls</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Persistent</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML Local Storage</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">_ga</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 2 years</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">_ga_#</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 2 years</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">_gcl_au</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.  </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 3 months</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div></div></li><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">newnewnew.space<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">1</div></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">_gtmeec</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used to temporarily store and process ecommerce-related interaction data in order to ensure reliable analytics event tracking across page loads.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 3 months</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div></div></li></ul></div></div></div></li><li class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerUnclassifiedCard"><button id="CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified" class="CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed" lang="en" data-target="CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified" aria-label="Unclassified (8)" aria-controls="CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified" aria-expanded="false">Unclassified  <span class="CybotCookiebotDialogDetailBulkConsentCount">8</span></button><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Unclassified cookies are cookies that we are in the process of classifying, together with the providers of individual cookies.</div></div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified" class="CollapseCard CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><ul class="CybotCookiebotDialogDetailBodyContentCookieTabContent"><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">TikTok<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">1</div></a><a class="CybotCookiebotDialogDetailBodyContentCookieLink" target="_blank" rel="noopener noreferrer nofollow" aria-label="Learn more about this provider - opens in a new window" href="https://www.tiktok.com/legal/privacy-policy?lang=en" title="Learn more about this provider TikTok's privacy policy - opens in a new window">Learn more about this provider<img class="CybotExternalLinkArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgBpdTdCcMgEAdwT/vk04EOkBG6QifpHH3rCF2hk3SVvBaEuoDYu4IgRRMv/iEkD/Hn+QnOuatS6gEAqDoJIQC/vfe594+m576FjAZKL6XXkSDiYox5UQFLXZEoNZJzXg9B/0hK6SKGWkiMcRVBewjnNIuURdIzyFBFo0jZPnoGqaMbCEqRJkSNIiFPCfILj7F1GLkySfvuqnFlShDxWesF6D76zF4jPJ/GWvum7/NRjBCegtsXQuuTY/odOJIAAAAASUVORK5CYII=" alt="opens in a new window"></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">tt_pixel_is_enrich_ipv6_triggered_by_enrich_am</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Pending</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML Local Storage</span></div></div></div></li><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">connection.newnewnew.space<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">1</div></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">_xsd</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Pending</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Persistent</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML Local Storage</span></div></div></div></li><li class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">plaza.newnewnew.space<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">6</div></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfoWrapper CybotCookiebotDialogHide"><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">__Host-PHPSESSID</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">In progress</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">currentUrl</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">In progress</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML Local Storage</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">lastUrl</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">In progress</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML Local Storage</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">portalLocale</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">In progress</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: 1 day</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">showMapOnList</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">In progress</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Persistent</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML Local Storage</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo"><strong class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle" role="heading" aria-level="4">staticfilecache</strong><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Pending</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Maximum Storage Duration</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP Cookie</span></div></div></div></li></ul></div></div></li></ul></div></div></div><div id="CybotCookiebotDialogDetailBulkConsent" lang="en" style="display: none;"><a id="CybotCookiebotDialogDetailBulkConsentLink" href="#" class="CybotExpandLink CybotCookiebotDialogCollapsed" data-target="CybotCookiebotDialogDetailBulkConsentListWrapper">Cross-domain consent<span class="CybotCookiebotDialogDetailBulkConsentCount">[#BULK_CONSENT_DOMAINS_COUNT#]</span></a><div role="heading" aria-level="3">[#BULK_CONSENT_TITLE#]</div><div id="CybotCookiebotDialogDetailBulkConsentListWrapper" class="CybotCookiebotDialogHide"><span>List of domains your consent applies to:</span> [#BULK_CONSENT_DOMAINS#]</div></div><div id="CybotCookiebotDialogDetailFooter" lang="en">Cookie declaration last updated on 7/16/26 by <a href="https://www.cookiebot.com" target="_blank" rel="noopener">Cookiebot</a></div></div></div><div class="CybotCookiebotScrollbarContainer"></div></div><div class="CybotCookiebotScrollContainer CybotCookiebotDialogHide"><div id="CybotCookiebotDialogDetailBodyContentTextIABv2" class="CybotCookiebotDialogTabPanel CybotCookiebotDialogHide CybotCookiebotScrollArea" role="tabpanel" aria-labelledby="CybotCookiebotDialogNavAdSettings" lang="en"><div class="CybotCookiebotFader" aria-hidden="true"></div><div id="CybotCookiebotDialogDetailBodyContentIABContainer"><div id="CybotCookiebotDialogDetailBodyContentIABv2Tabs"><div class="CybotCookiebotDialogDetailBodyContentIABv2TabsIntro"><div class="CybotCookiebotDialogBodyContentHeading" role="heading" aria-level="2">[#IABV2_TITLE#]</div>[#IABV2_BODY_INTRO#]</div><div class="CybotCookiebotDialogDetailBodyContentIABv2TabsIntro">[#IABV2_BODY_LEGITIMATE_INTEREST_INTRO#]</div><div class="CybotCookiebotDialogDetailBodyContentIABv2TabsIntro">[#IABV2_BODY_PREFERENCE_INTRO#]</div><div class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentIABv2PurposesCard"><button id="CybotCookiebotDialogDetailBodyContentIABv2Purposes" class="CybotCookiebotDialogDetailBodyContentIABv2Tab CybotCookiebotDialogCollapsed" tabindex="0" data-target="CybotCookiebotDialogDetailBodyContentIABv2PurposesBody" lang="en" aria-label="[#IABV2_LABEL_PURPOSES_ARIA_LABEL#]" aria-controls="CybotCookiebotDialogDetailBodyContentIABv2PurposesBody">[#IABV2_LABEL_PURPOSES#]</button><div class="CybotCookiebotDialogDetailBodyContentIABv2CardIntro">[#IABV2_BODY_PURPOSES_INTRO#]</div></div><div id="CybotCookiebotDialogDetailBodyContentIABv2PurposesBody" class="CollapseCard CybotCookiebotDialogHide">[#IABV2_BODY_PURPOSES#]</div></div><div class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentIABv2FeaturesCard"><button id="CybotCookiebotDialogDetailBodyContentIABv2Features" class="CybotCookiebotDialogDetailBodyContentIABv2Tab CybotCookiebotDialogCollapsed" tabindex="0" data-target="CybotCookiebotDialogDetailBodyContentIABv2FeaturesBody" lang="en" aria-label="[#IABV2_LABEL_FEATURES_ARIA_LABEL#]" aria-controls="CybotCookiebotDialogDetailBodyContentIABv2FeaturesBody">[#IABV2_LABEL_FEATURES#]</button><div class="CybotCookiebotDialogDetailBodyContentIABv2CardIntro">[#IABV2_BODY_FEATURES_INTRO#]</div></div><div id="CybotCookiebotDialogDetailBodyContentIABv2FeaturesBody" class="CollapseCard CybotCookiebotDialogHide">[#IABV2_BODY_FEATURES#]</div></div><div class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentIABv2PartnersCard"><button id="CybotCookiebotDialogDetailBodyContentIABv2Partners" class="CybotCookiebotDialogDetailBodyContentIABv2Tab CybotCookiebotDialogCollapsed" tabindex="0" data-target="CybotCookiebotDialogDetailBodyContentIABv2PartnersBody" lang="en" aria-label="[#IABV2_LABEL_PARTNERS_ARIA_LABEL#]" aria-controls="CybotCookiebotDialogDetailBodyContentIABv2PartnersBody">[#IABV2_LABEL_PARTNERS#]</button><div class="CybotCookiebotDialogDetailBodyContentIABv2CardIntro">[#IABV2_BODY_PARTNERS_INTRO#]</div></div><div id="CybotCookiebotDialogDetailBodyContentIABv2PartnersBody" class="CollapseCard CybotCookiebotDialogHide">[#IABV2_BODY_PARTNERS#]</div></div></div></div></div><div class="CybotCookiebotScrollbarContainer"></div></div><div class="CybotCookiebotScrollContainer CybotCookiebotDialogHide"><div id="CybotCookiebotDialogDetailBodyContentTextAbout" class="CybotCookiebotDialogTabPanel CybotCookiebotDialogHide CybotCookiebotScrollArea" role="tabpanel" aria-labelledby="CybotCookiebotDialogNavAbout" lang="en"><div class="CybotCookiebotDialogSROnly" role="heading" aria-level="2">About</div><div class="CybotCookiebotFader" aria-hidden="true"></div><div role="paragraph" tabindex="0">Cookies are small text files that can be used by websites to make a user's experience more efficient.<br style=""><br style="">The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission.<br style=""><br style="">This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.<br style=""><br style="">You can at any time change or withdraw your consent from the Cookie Declaration on our website.<br style=""><br style="">Learn more about who we are, how you can contact us and how we process personal data in our Privacy Policy.<br style=""><br style="">Please state your consent ID and date when you contact us regarding your consent.</div></div><div class="CybotCookiebotScrollbarContainer"></div></div></div><div id="CybotCookiebotDialogFooter" class="CybotCookiebotScrollContainer"><div class="CybotCookiebotScrollArea"><div id="CybotCookiebotDialogBodyButtons"><div class="CybotCookiebotDialogBodyLevelButtonWrapper CybotCookiebotDialogBodyContentControlsWrapper CybotCookiebotDialogHide CybotCookiebotDialogBodyLevelButtonSliderWrapperFullWidth"><div role="group" class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyContentCheckboxPersonalInformation" class="CybotCookiebotDialogBodyLevelButton" tabindex="0" role="switch"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></div><label class="CybotCookiebotDialogBodyLevelButtonLabel" for="CybotCookiebotDialogBodyContentCheckboxPersonalInformation"><strong class="CybotCookiebotDialogBodyLevelButtonDescription">Do not sell or share my personal information</strong></label></div><div id="CybotCookiebotDialogBodyButtonsWrapper"><button id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll" class="CybotCookiebotDialogBodyButton" tabindex="0" lang="en">Allow all</button><button id="CybotCookiebotDialogBodyLevelButtonCustomize" class="CybotCookiebotDialogBodyButton" tabindex="0" lang="en">Customize<div class="CybotCookiebotDialogArrow"></div></button><button id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection" class="CybotCookiebotDialogBodyButton CybotCookiebotDialogHide" tabindex="0" lang="en">Allow selection</button><button id="CybotCookiebotDialogBodyButtonDecline" class="CybotCookiebotDialogBodyButton CybotCookiebotDialogHide" tabindex="0" lang="en">Deny</button></div></div></div><div class="CybotCookiebotScrollbarContainer"></div></div></div></div> 
+	<!-- Google Tag Manager (noscript) -->
+  	<noscript><iframe src="https://connection.newnewnew.space/ns.html?id=GTM-PFQSL5G" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  	<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Google Translate -->
+    <script type="text/plain" data-cookieconsent="Marketing">
+        function googleTranslateElementInit() {
+        const elementId = window.innerWidth >= 840 ? 'google_translate_element_desktop' : 'google_translate_element_mobile';
+        new google.translate.TranslateElement({pageLanguage: 'nl', excludedLanguages: 'nl,en'}, elementId);
+        document.querySelectorAll('.google-translate-wrapper').forEach(function(el) {
+        el.style.display = 'flex';
+        });
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/plain" data-cookieconsent="Marketing"></script>
+    <!-- End Google Translate -->
+
+
+
+
+
+
+
+
+
+
+
+<zds-config locale="nl" class="hydrated"></zds-config>
+<script>
+    const config = document.querySelector('zds-config');
+    customElements.whenDefined('zds-config').then(() => {
+        config.setTranslationOverrides({
+            validation: {
+                patternMismatch: 'Dit veld bevat ongeldige tekens',
+                rangeOverflow: 'De opgegeven waarde is te hoog',
+                rangeUnderflow: 'De opgegeven waarde is te laag',
+                stepMismatch: 'De opgegeven waarde valt niet binnen de mogelijke stappen',
+                tooLong: 'De opgegeven waarde is te lang',
+                tooShort: 'De opgegeven waarde is te kort',
+                typeMismatch: 'De opgegeven waarde is incorrect',
+                valueMissing: 'Dit verplichte veld is niet ingevuld'
+            }
+        });
+    });
+</script>
+
+
+    <main>
+        
+
+<header>
+    
+        
+    
+
+
+    
+    
+    <div data-react-component="Notifications" data-page="{&quot;fullWidth&quot;:0}"><div class="notification-banners"></div></div>
+
+    
+
+<nav id="main-menu" prevent-search-popout="">
+    
+
+    
+
+    <zds-navigation id="main-navigation" skip-to-content-id="main-content" skip-to-content-text="Direct naar hoofdinhoud" class="hydrated">
+        
+
+
+
+
+    
+        
+            
+        
+
+        
+
+        
+
+
+        
+            <div slot="super-navigation">
+                <zds-link position="start" id="high-contrast" class="hydrated">Hoog contrast<zds-icon library="fa-solid" name="circle-half-stroke" size="4" slot="icon" aria-hidden="true" sizing-type="square" class="hydrated"></zds-icon></zds-link>
+                <zds-popout target="#high-contrast" id="high-contrast-popout" position="start" strategy="fixed" style="--zds-popout-inset: 1rem; position: fixed; max-height: 490px; width: auto; top: 10px; left: 0px;" class="hydrated">
+                    <div class="zds-flex-col zds-gap-3">
+                        <zds-switch class="high-contrast hydrated" zds-id="zds-switch-6e9f84c9-ff32-4c64-8c25-6ffa04e57532">
+                            Hoog contrast
+                        </zds-switch>
+
+                        
+                    </div>
+                </zds-popout>
+            </div>
+        
+
+        
+            <div slot="super-navigation" class="language-switch-toggle">
+                
+                    
+                        <zds-link title="Nederlands" icon-position="start" id="current-language-link" class="hydrated">
+                            <span class="language-switch__flag" slot="icon"><span class="t3js-icon icon icon-size-small icon-state-default icon-flags-nl" data-identifier="flags-nl" aria-hidden="true">
+	<span class="icon-markup">
+<img src="/_assets/1ee1d3e909b58d32e30dcea666dd3224/Icons/Flags/nl.webp" width="16" height="16" alt="">
+	</span>
+	
+</span></span>
+                            Nederlands
+                        </zds-link>
+                    
+                
+                    
+                
+
+                
+                    <zds-link class="zds-hidden hydrated" icon-position="start" id="google-translate-link">
+                        <div slot="icon" class="google-translate-wrapper">
+                            <img src="/_assets/ad8927e84ac4d76265df086510629ea1/Images/Google_Translate_logo.svg" width="16" height="16" alt="">
+                        </div>
+                        <div id="google-translate-language-text" class="notranslate"></div>
+                    </zds-link>
+                
+            </div>
+        
+
+        
+    
+
+
+
+        <zds-navigation-logo class="zds-flex-1 md:zds-flex-none hydrated" width="175" src="/fileadmin/logo/logo-blauw.svg" link="/" alt="Logo" slot="logo" mobile-width="50" overlap-behaviour="full" position="default"></zds-navigation-logo>
+
+        
+            
+
+
+        
+        
+    
+
+
+    
+            <zds-navigation-body slot="link" class="zds-hidden xl:zds-block hydrated" identifier="body_0">
+                <zds-navigation-link slot="navigation-link" class="hydrated">
+                    AANBOD
+                    <zds-icon name="expand_more" size="5" slot="icon-end" aria-hidden="true" library="mui" sizing-type="square" class="hydrated"></zds-icon>
+                </zds-navigation-link>
+
+                
+                    <h2 slot="title" class="inherit-font">Vind jouw ruimte</h2>
+                
+                
+                    <span slot="subtext">
+                        <p>Met onze woon- en werkruimtes bieden we jou de vrijheid om een bruisend stadsleven te leiden.</p>
+                    </span>
+                
+                <div class="zds-row">
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link link="/aanbod/wonen" level="1" class="hydrated">
+                            <h3 class="inherit-font">
+                            
+                                <zds-icon slot="icon" sizing-type="square" library="fa-regular" name="house" aria-hidden="true" size="6" class="hydrated"></zds-icon>
+                            
+                            Woonruimte
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                        </div>
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link link="/aanbod/werkruimte" level="1" class="hydrated">
+                            <h3 class="inherit-font">
+                            
+                                <zds-icon slot="icon" sizing-type="square" library="fa-regular" name="house" aria-hidden="true" size="6" class="hydrated"></zds-icon>
+                            
+                            Werkruimte
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                        </div>
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link link="/aanbod/parkeren/berging" level="1" class="hydrated">
+                            <h3 class="inherit-font">
+                            
+                                <zds-icon slot="icon" sizing-type="square" library="fa-regular" name="car" aria-hidden="true" size="6" class="hydrated"></zds-icon>
+                            
+                            Parkeren/opslag
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                        </div>
+                    
+                </div>
+            </zds-navigation-body>
+        
+
+    
+            <zds-navigation-link slot="link" class="zds-hidden xl:zds-block hydrated" link="/faq">
+                FAQ
+            </zds-navigation-link>
+        
+
+    
+            <zds-navigation-body slot="link" class="zds-hidden xl:zds-block hydrated" identifier="body_2">
+                <zds-navigation-link slot="navigation-link" class="hydrated">
+                    Onze complexen
+                    <zds-icon name="expand_more" size="5" slot="icon-end" aria-hidden="true" library="mui" sizing-type="square" class="hydrated"></zds-icon>
+                </zds-navigation-link>
+
+                
+                
+                <div class="zds-row">
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link level="1" class="hydrated">
+                            <h3 class="inherit-font">
+                            
+                            Nederland
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                                
+                                    <zds-navigation-panel-link link="/onze-complexen/maastricht/sorbonnelaan" level="2" class="hydrated">Maastricht</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/onze-complexen/nederland/amsterdam" level="2" class="hydrated">Amsterdam</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/onze-complexen/nederland/utrecht" level="2" class="hydrated">Utrecht</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/onze-complexen/nederland/eindhoven" level="2" class="hydrated">Eindhoven</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/onze-complexen/nederland/enschede/de-veldmaat" level="2" class="hydrated">Enschede</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/onze-complexen/nederland/delft" level="2" class="hydrated">Delft</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/onze-complexen/nederland/breda/teteringsedijk" level="2" class="hydrated">Breda</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/onze-complexen/nederland/arnhem/arien-verhoeffstraat" level="2" class="hydrated">Arnhem</zds-navigation-panel-link>
+                                
+                            
+                        </div>
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link level="1" class="hydrated">
+                            <h3 class="inherit-font">
+                            
+                            Duitsland
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                                
+                                    <zds-navigation-panel-link link="/onze-complexen/duitsland/bochum/universitaetsstrasse" level="2" class="hydrated">Bochum</zds-navigation-panel-link>
+                                
+                            
+                        </div>
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link level="1" class="hydrated">
+                            <h3 class="inherit-font">
+                            
+                            Polen
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                                
+                                    <zds-navigation-panel-link link="https://plazapolska.newnewnew.space/en/" level="2" class="hydrated">Poznan</zds-navigation-panel-link>
+                                
+                            
+                        </div>
+                    
+                </div>
+            </zds-navigation-body>
+        
+
+    
+            <zds-navigation-link slot="link" class="zds-hidden xl:zds-block hydrated" link="/faq">
+                FAQ &amp; Help
+            </zds-navigation-link>
+        
+
+    
+            <zds-navigation-link slot="link" class="zds-hidden xl:zds-block zds-margin-right-auto hydrated" link="/contact">
+                CONTACT
+            </zds-navigation-link>
+        
+
+
+
+
+        
+        // Always render the hamburger menu for phone users
+        
+<zds-navigation-body slot="link" class="zds-flex-none md:zds-flex-1 xl:zds-hidden hydrated" identifier="main-body">
+    <zds-navigation-link slot="navigation-link" aria-label="Menu" class="hydrated">
+        <zds-icon name="menu" slot="icon-start" aria-hidden="true" library="mui" size="6" sizing-type="square" class="hydrated"></zds-icon>
+        <span class="zds-hidden md:zds-block" aria-hidden="true">Menu</span>
+    </zds-navigation-link>
+
+    
+
+    
+            <zds-navigation-panel header="AANBOD" identifier="807" class="hydrated">
+                <zds-navigation-body-link data-zds-navigation-body-animate="" slot="body-link" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                    
+                    <h2 class="inherit-font zds-margin-0">AANBOD</h2>
+                </zds-navigation-body-link>
+
+                
+                    <h2 slot="title" class="inherit-font" data-zds-navigation-panel-animate="" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">Vind jouw ruimte</h2>
+                
+                
+                    <span slot="subtext" data-zds-navigation-panel-animate="" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                        <p>Met onze woon- en werkruimtes bieden we jou de vrijheid om een bruisend stadsleven te leiden.</p>
+                    </span>
+                
+                <div class="zds-row">
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/aanbod/wonen" level="1" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                            <h3 class="inherit-font zds-margin-0 zds-flex zds-items-center">
+                            
+                                <zds-icon slot="icon" size="inherit" class="zds-margin-right-2 hydrated" sizing-type="square" library="fa-regular" name="house" aria-hidden="true"></zds-icon>
+                            
+                            Woonruimte
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                        </div>
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/aanbod/werkruimte" level="1" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                            <h3 class="inherit-font zds-margin-0 zds-flex zds-items-center">
+                            
+                                <zds-icon slot="icon" size="inherit" class="zds-margin-right-2 hydrated" sizing-type="square" library="fa-regular" name="house" aria-hidden="true"></zds-icon>
+                            
+                            Werkruimte
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                        </div>
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/aanbod/parkeren/berging" level="1" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                            <h3 class="inherit-font zds-margin-0 zds-flex zds-items-center">
+                            
+                                <zds-icon slot="icon" size="inherit" class="zds-margin-right-2 hydrated" sizing-type="square" library="fa-regular" name="car" aria-hidden="true"></zds-icon>
+                            
+                            Parkeren/opslag
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                        </div>
+                    
+                </div>
+            </zds-navigation-panel>
+        
+
+    
+            <zds-navigation-body-link data-zds-navigation-body-animate="" link="/faq" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                
+                FAQ
+            </zds-navigation-body-link>
+        
+
+    
+            <zds-navigation-panel header="Onze complexen" identifier="1978" class="hydrated">
+                <zds-navigation-body-link data-zds-navigation-body-animate="" slot="body-link" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                    
+                    <h2 class="inherit-font zds-margin-0">Onze complexen</h2>
+                </zds-navigation-body-link>
+
+                
+                
+                <div class="zds-row">
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link data-zds-navigation-panel-animate="" level="1" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                            <h3 class="inherit-font zds-margin-0 zds-flex zds-items-center">
+                            
+                            Nederland
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                                
+                                    <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/onze-complexen/maastricht/sorbonnelaan" level="2" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">Maastricht</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/onze-complexen/nederland/amsterdam" level="2" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">Amsterdam</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/onze-complexen/nederland/utrecht" level="2" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">Utrecht</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/onze-complexen/nederland/eindhoven" level="2" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">Eindhoven</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/onze-complexen/nederland/enschede/de-veldmaat" level="2" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">Enschede</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/onze-complexen/nederland/delft" level="2" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">Delft</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/onze-complexen/nederland/breda/teteringsedijk" level="2" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">Breda</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/onze-complexen/nederland/arnhem/arien-verhoeffstraat" level="2" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">Arnhem</zds-navigation-panel-link>
+                                
+                            
+                        </div>
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link data-zds-navigation-panel-animate="" level="1" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                            <h3 class="inherit-font zds-margin-0 zds-flex zds-items-center">
+                            
+                            Duitsland
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                                
+                                    <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="/onze-complexen/duitsland/bochum/universitaetsstrasse" level="2" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">Bochum</zds-navigation-panel-link>
+                                
+                            
+                        </div>
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link data-zds-navigation-panel-animate="" level="1" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                            <h3 class="inherit-font zds-margin-0 zds-flex zds-items-center">
+                            
+                            Polen
+                            </h3>
+                            </zds-navigation-panel-link>
+                            
+                                
+                                    <zds-navigation-panel-link data-zds-navigation-panel-animate="" link="https://plazapolska.newnewnew.space/en/" level="2" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">Poznan</zds-navigation-panel-link>
+                                
+                            
+                        </div>
+                    
+                </div>
+            </zds-navigation-panel>
+        
+
+    
+            <zds-navigation-body-link data-zds-navigation-body-animate="" link="/faq" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                
+                FAQ &amp; Help
+            </zds-navigation-body-link>
+        
+
+    
+            <zds-navigation-body-link data-zds-navigation-body-animate="" link="/contact" class="hydrated" style="opacity: 0; transition: opacity 300ms var(--zds-transition-type-ease-out);">
+                
+                CONTACT
+            </zds-navigation-body-link>
+        
+
+
+
+    
+
+
+
+
+    <div class="zds-flex-col md:zds-hidden zds-gap-y-3 zds-margin-top-6">
+        
+
+        
+
+        
+            <div slot="super-navigation" class="language-switch-toggle">
+                
+                    
+                        <zds-link title="Nederlands" icon-position="start" id="current-language-link-mobile" class="hydrated">
+                            <span class="language-switch__flag" slot="icon"><span class="t3js-icon icon icon-size-small icon-state-default icon-flags-nl" data-identifier="flags-nl" aria-hidden="true">
+	<span class="icon-markup">
+<img src="/_assets/1ee1d3e909b58d32e30dcea666dd3224/Icons/Flags/nl.webp" width="16" height="16" alt="">
+	</span>
+	
+</span></span>
+                            Nederlands
+                        </zds-link>
+                    
+                
+                    
+                
+
+                
+                    <zds-link class="zds-hidden hydrated" icon-position="start" id="google-translate-link-mobile">
+                        <div slot="icon" class="google-translate-wrapper">
+                            <img src="/_assets/ad8927e84ac4d76265df086510629ea1/Images/Google_Translate_logo.svg" width="16" height="16" alt="">
+                        </div>
+                        <div id="google-translate-language-text-mobile" class="notranslate"></div>
+                    </zds-link>
+                
+            </div>
+        
+    </div>
+
+
+
+    
+         
+    
+</zds-navigation-body>
+
+
+        
+            <div slot="link" class="md:zds-hidden">
+                <zds-navigation-link id="accessibility-tools-link" class="md:zds-hidden hydrated" aria-label="Leeshulp">
+                    <zds-icon name="accessibility" slot="icon-start" aria-hidden="true" library="mui" size="6" sizing-type="square" class="hydrated"></zds-icon>
+                </zds-navigation-link>
+                <zds-popout class="accessibility-menu md:zds-hidden hydrated" target="#accessibility-tools-link" id="accessibility-tools-popout" position="start" strategy="fixed" style="position: fixed; max-height: 490px; width: auto; top: 10px; left: 0px;">
+                    <div class="zds-flex-col zds-items-start">
+                        
+                            <div class="zds-flex-col zds-items-start zds-width-full">
+                                <zds-switch class="high-contrast hydrated" zds-id="zds-switch-483cfaf6-e70d-4c2d-99c2-67a7a0092eda">
+                                    Hoog contrast
+                                </zds-switch>
+
+                                
+                            </div>
+                        
+
+                        
+
+                        
+
+                        
+                    </div>
+                </zds-popout>
+            </div>
+        
+
+        
+            <zds-navigation-body slot="link" identifier="search-body" class="hydrated">
+                <zds-navigation-link slot="navigation-link" id="search-link" aria-label="Zoeken" class="hydrated">
+                    
+                    
+                            <zds-icon aria-hidden="true" slot="icon-start" class="fa-icon hydrated" sizing-type="square" library="fa-light" name="magnifying-glass" size="6"></zds-icon>
+                        
+                    <span class="zds-hidden md:zds-block" aria-hidden="true">Zoeken</span>
+                </zds-navigation-link>
+
+                
+
+
+
+
+
+
+
+        
+                
+            
+    
+
+
+        <div class="content frame-default frame-type-zigsearch_searchandresult frame-list-type- frame-layout-0 frame-space-before-default
+        frame-space-after-none  ">
+            <div class="zds-container">
+                <div class="zds-row">
+                    <div class="zds-col">
+                        
+
+                                <div id="c42" class="frame">
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+    
+        <div class="zds-row">
+            <div class="default-content">
+                <header class="zds-margin-bottom-4">
+                    
+
+
+    <h2 class="zds-headline-lg">
+        Waar ben je naar op zoek?
+    </h2>
+
+
+                    
+    
+
+
+                    
+
+
+
+                </header>
+            </div>
+        </div>
+    
+
+
+                                    
+                                    
+
+    
+    
+    
+
+    
+    
+        
+        <div data-react-component="Search" data-view-type="searchandresult" data-token="7RVTsMhMiTlEjH4VqkL6YVYDw54Sbp2WnKXL7yMYi7W6ztqEUxa3jmp4L8RNKWIb" data-page="{&quot;language&quot;:0,&quot;languageCode&quot;:&quot;nl&quot;,&quot;languagePath&quot;:&quot;\/&quot;,&quot;basePath&quot;:&quot;https:\/\/plaza.newnewnew.space\/&quot;,&quot;fullWidth&quot;:false,&quot;marathonAppId&quot;:&quot;\/azure-prd\/bu-wrb\/mosaic\/wzp\/plaza\/productie&quot;,&quot;noTitle&quot;:false}" data-asset-paths="{&quot;sitepackage&quot;:&quot;\/_assets\/ad8927e84ac4d76265df086510629ea1\/&quot;}" ng-non-bindable=""><div class="search-container"><div class="zds-row"><div class="default-content"><div data-zds-name="ZdsInputSearch" class="zds-margin-y-1 css-9z0iht"><div class="css-1ep82xj"><div class="css-1j5hrwi" data-zds-name="ZdsInputText"><div class="zds-flex-col"><div class="zds-flex"><div class="zds-flex-1 zds-min-width-0"><div class="css-uzb1jv" data-rac=""><div role="presentation" data-testid="input-text" class="zds-input-text-group css-1rxiihf" data-rac=""><div class="css-14zmdnn"><div data-zds-name="ZdsIcon" data-testid="icon-wrapper-magnifying-glass" size="4" class="zds-icon css-o65oml"><div data-testid="icon-magnifying-glass" aria-hidden="true" class="css-zlmch0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M368 208a160 160 0 1 0 -320 0 160 160 0 1 0 320 0zM337.1 371.1C301.7 399.2 256.8 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208c0 48.8-16.8 93.7-44.9 129.1L505 471c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L337.1 371.1z"></path></svg></div></div></div><input placeholder="Hallo, waar bent u naar op zoek?" tabindex="0" id="ZdsInputText-ae5509ed-31dc-4ddb-8cd5-b71f12fd7442-input" class="css-2iu2nh" data-rac="" type="text" value="" title=""><div class="css-1pgztqv"><div class="zds-clear-button"><div data-zds-name="ZdsIconButton" data-testid="input-clear-button" class="css-umtat6"><div class="css-59ujjz"><button data-overhang-bottom="true" data-overhang-right="true" data-overhang-top="true" class="css-1ua2pg" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-label="Clear Button" id="react-aria1344795754-_r_k_" style="margin-right: calc(-1 * var(--zds-button-inset-x-modified) - 0px);"><div class="css-zbg9uq" style="padding-left: 0px; padding-right: 0px;"><div aria-hidden="true" class="css-1onyzrb"><div class="css-qxu7wl"><div data-zds-name="ZdsProgressCircle" class="css-1rn73m2"><div class="iZc1lq_spectrum-CircleLoader iZc1lq_spectrum-CircleLoader--indeterminate" aria-label="Loading" id="react-aria1344795754-_r_m_" aria-valuemin="0" aria-valuemax="100" role="progressbar"><div class="iZc1lq_spectrum-CircleLoader-track"></div><div class="iZc1lq_spectrum-CircleLoader-fills"><div class="iZc1lq_spectrum-CircleLoader-fillMask1"><div class="iZc1lq_spectrum-CircleLoader-fillSubMask1" data-testid="fillSubMask1"><div class="iZc1lq_spectrum-CircleLoader-fill"></div></div></div><div class="iZc1lq_spectrum-CircleLoader-fillMask2"><div class="iZc1lq_spectrum-CircleLoader-fillSubMask2" data-testid="fillSubMask2"><div class="iZc1lq_spectrum-CircleLoader-fill"></div></div></div></div></div></div></div></div><div class="css-1235nab"><div data-zds-name="ZdsIcon" data-testid="icon-wrapper-circle-xmark" size="4" class="zds-icon css-o65oml zds-button__icon"><div data-testid="icon-circle-xmark" aria-hidden="true" class="css-zlmch0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM167 167c9.4-9.4 24.6-9.4 33.9 0l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9z"></path></svg></div></div></div></div></button></div></div></div></div></div></div></div></div><div class="zds-flex zds-gap-2"><div class="zds-flex-1"></div></div></div></div></div><div class="css-1is0mv9"><div data-zds-name="ZdsIconButton" class="css-12tnfs3"><div class="css-59ujjz"><button class="css-w7larg" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" id="react-aria1344795754-_r_p_"><div class="css-zbg9uq" style="padding-left: 0px; padding-right: 0px;"><div aria-hidden="true" class="css-1onyzrb"><div class="css-qxu7wl"><div data-zds-name="ZdsProgressCircle" class="css-1rn73m2"><div class="iZc1lq_spectrum-CircleLoader iZc1lq_spectrum-CircleLoader--indeterminate" aria-label="Loading" id="react-aria1344795754-_r_r_" aria-valuemin="0" aria-valuemax="100" role="progressbar"><div class="iZc1lq_spectrum-CircleLoader-track"></div><div class="iZc1lq_spectrum-CircleLoader-fills"><div class="iZc1lq_spectrum-CircleLoader-fillMask1"><div class="iZc1lq_spectrum-CircleLoader-fillSubMask1" data-testid="fillSubMask1"><div class="iZc1lq_spectrum-CircleLoader-fill"></div></div></div><div class="iZc1lq_spectrum-CircleLoader-fillMask2"><div class="iZc1lq_spectrum-CircleLoader-fillSubMask2" data-testid="fillSubMask2"><div class="iZc1lq_spectrum-CircleLoader-fill"></div></div></div></div></div></div></div></div><div class="css-1235nab"><div data-zds-name="ZdsIcon" data-testid="icon-wrapper-magnifying-glass" size="4" class="zds-icon css-o65oml zds-button__icon"><div data-testid="icon-magnifying-glass" aria-hidden="true" class="css-zlmch0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M368 208a160 160 0 1 0 -320 0 160 160 0 1 0 320 0zM337.1 371.1C301.7 399.2 256.8 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208c0 48.8-16.8 93.7-44.9 129.1L505 471c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L337.1 371.1z"></path></svg></div></div></div></div></button></div></div></div></div><div class="zds-padding-top-16"></div></div></div></div></div>
+    
+
+
+
+
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                </div>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+                <div id="search--extra-content">
+                    
+
+
+
+
+
+
+
+        
+                
+            
+    
+
+
+        <div class="content frame-default frame-type-text frame-list-type- frame-layout-0 frame-space-before-default
+        frame-space-after-none  ">
+            <div class="zds-container">
+                <div class="zds-row">
+                    <div class="zds-col">
+                        
+
+                                <div id="c306" class="frame">
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+    
+        <div class="zds-row">
+            <div class="default-content">
+                <header class="zds-margin-bottom-4">
+                    
+
+
+    <h2 class="zds-headline-lg">
+        Of staat je vraag hier tussen?
+    </h2>
+
+
+                    
+    
+
+
+                    
+
+
+
+                </header>
+            </div>
+        </div>
+    
+
+
+                                    
+                                    
+    <div class="zds-row">
+        <div class="default-content">
+            
+        </div>
+    </div>
+
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                </div>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                
+            
+    
+
+
+        <div class="content frame-default frame-type-zigkennisbank_faq frame-list-type- frame-layout-0 frame-space-before-default
+        frame-space-after-default  ">
+            <div class="zds-container">
+                <div class="zds-row">
+                    <div class="zds-col">
+                        
+
+                                <div id="c1512" class="frame">
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+    
+
+
+                                    
+                                    
+
+    
+    
+    
+    <div data-react-component="KnowledgeBase" data-plugin="{&quot;customerUid&quot;:&quot;1&quot;,&quot;startNodeUids&quot;:&quot;1738&quot;,&quot;contentUid&quot;:&quot;1512&quot;,&quot;detailPageUrl&quot;:&quot;https:\/\/plaza.newnewnew.space\/vraag-en-antwoord&quot;}" data-auth="{&quot;knowledgebase&quot;:{&quot;token&quot;:&quot;&quot;,&quot;customer&quot;:&quot;Website&quot;}}" data-page="{&quot;language&quot;:0,&quot;languageCode&quot;:&quot;nl&quot;,&quot;languagePath&quot;:&quot;\/&quot;,&quot;basePath&quot;:&quot;https:\/\/plaza.newnewnew.space\/&quot;,&quot;fullWidth&quot;:false,&quot;marathonAppId&quot;:&quot;\/azure-prd\/bu-wrb\/mosaic\/wzp\/plaza\/productie&quot;,&quot;noTitle&quot;:false}" data-view-type="faq" class="knowledgeBase-content"></div>
+
+
+
+
+
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                </div>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                
+            
+    
+
+
+        <div class="content frame-default frame-type-dce_button frame-list-type- frame-layout-0 frame-space-before-default
+        frame-space-after-default  ">
+            <div class="zds-container">
+                <div class="zds-row">
+                    <div class="zds-col">
+                        
+
+                                <div id="c1353" class="frame">
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+    
+
+
+                                    
+                                    
+
+    
+    <div class="zds-row">
+    <div class="default-content zds-text-left">
+        
+                <!-- Regular button (default) -->
+                <zds-button variant="contained" preset="primary" size="md" link="/faq" link-target="_self" class="hydrated">
+                    
+                    Bekijk alle vragen en antwoorden
+                </zds-button>
+            
+    </div>
+</div>
+
+
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                </div>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+                </div>
+            </zds-navigation-body>
+        
+
+        
+
+        
+            
+                    
+                    
+
+
+
+
+
+
+
+        <zds-navigation-body slot="link" identifier="login-menu" class="hydrated">
+            <zds-navigation-link slot="navigation-link" body-target="login-menu" no-icon="true" class="hydrated">
+                <div id="login-menu">
+                    
+    <div class="zds-flex zds-items-center sm:zds-hidden">
+        <zds-avatar class="hydrated">
+  
+      AS
+    
+</zds-avatar>
+    </div>
+
+    <div class="login-menu-large zds-hidden sm:zds-block">
+        <div class="zds-flex zds-items-center zds-gap-1 zds-margin-y-1 zds-margin-x-1">
+            <zds-avatar class="hydrated">
+  
+      AS
+    
+</zds-avatar>
+            <div class="login-menu-username zds-flex-initial zds-hidden lg:zds-block zds-overflow-hidden zds-margin-left-1 notranslate">
+                
+                        A.M.
+                        
+                        Simionov
+                    
+            </div>
+            <zds-icon id="login-menu-expand" class="login-menu-expand hydrated" aria-label="icoon" name="expand_more" size="sm" aria-hidden="true" library="mui" sizing-type="square">
+        </zds-icon></div>
+    </div>
+
+                </div>
+            </zds-navigation-link>
+
+            
+
+
+
+
+
+    <div class="zds-flex-col md:zds-flex-row">
+        <div class="navigation__left">
+            <div class="zds-headline-sm">
+                
+                        
+                            A.M. Simionov
+                        
+                    
+            </div>
+            <div class="zds-subheadline-sm zds-margin-y-4">
+                simionov.andrei
+            </div>
+            
+                <zds-button link="/portaal/mijn-pagina/mijn-overzicht" variant="outlined" class="zds-margin-bottom-4 zds-margin-right-3 hydrated" preset="primary" size="md">
+                    <zds-icon size="inherit" sizing-type="square" library="fa-solid" name="user" aria-hidden="true" class="hydrated zds-button__icon zds-button__icon--has-content-after"></zds-icon>
+                    Mijn overzicht
+                </zds-button>
+            
+            <zds-button link="/portaal/mijn-pagina/mijn-gegevens/uitloggen?logintype=logout" variant="outlined" preset="primary" size="md" class="hydrated">
+                <zds-icon size="inherit" sizing-type="square" library="fa-regular" name="power-off" aria-hidden="true" class="hydrated zds-button__icon zds-button__icon--has-content-after"></zds-icon>
+                Uitloggen
+            </zds-button>
+        </div>
+        
+            <div class="zds-block md:zds-hidden zds-margin-top-6">
+                
+                    <div class="zds-margin-bottom-6">
+                        <zds-navigation-panel-link level="1" class="hydrated">
+                            
+                                <zds-icon slot="icon" size="inherit" sizing-type="square" library="fa-light" name="house-chimney" aria-hidden="true" class="hydrated"></zds-icon>
+                            
+                            Woning zoeken
+                        </zds-navigation-panel-link>
+                        
+                            
+                                <zds-navigation-panel-link link="/aanbod/wonen" level="2" class="hydrated">Passende huurwoningen</zds-navigation-panel-link>
+                            
+                                <zds-navigation-panel-link link="/portaal/mijn-pagina/woning-zoeken/mijn-reacties/advertenties-online" level="2" class="hydrated">Mijn reacties</zds-navigation-panel-link>
+                            
+                                <zds-navigation-panel-link link="/portaal/mijn-pagina/woning-zoeken/aangeboden-woningen" level="2" class="hydrated">Aangeboden woningen</zds-navigation-panel-link>
+                            
+                                <zds-navigation-panel-link link="/portaal/mijn-pagina/woning-zoeken/search-profile" level="2" class="hydrated">Search profile</zds-navigation-panel-link>
+                            
+                        
+                    </div>
+                
+                    <div class="zds-margin-bottom-6">
+                        <zds-navigation-panel-link level="1" class="hydrated">
+                            
+                                <zds-icon slot="icon" size="inherit" sizing-type="square" library="fa-regular" name="user" aria-hidden="true" class="hydrated"></zds-icon>
+                            
+                            Mijn gegevens
+                        </zds-navigation-panel-link>
+                        
+                            
+                                <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/gebruikersnaam-en-wachtwoord/gebruikersnaam" level="2" class="hydrated">Gebruikersnaam en wachtwoord</zds-navigation-panel-link>
+                            
+                                <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/persoonlijke-gegevens/aanvrager-1" level="2" class="hydrated">Persoonlijke gegevens</zds-navigation-panel-link>
+                            
+                                <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/mijn-inkomen" level="2" class="hydrated">Mijn inkomen</zds-navigation-panel-link>
+                            
+                                <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/mijn-berichten" level="2" class="hydrated">Mijn berichten</zds-navigation-panel-link>
+                            
+                                <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/mijn-betalingen" level="2" class="hydrated">Mijn betalingen</zds-navigation-panel-link>
+                            
+                                <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/mijn-documenten" level="2" class="hydrated">Mijn documenten</zds-navigation-panel-link>
+                            
+                                <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/uitschrijven" level="2" class="hydrated">Uitschrijven</zds-navigation-panel-link>
+                            
+                        
+                    </div>
+                
+            </div>
+            <div class="zds-hidden md:zds-block">
+                
+                
+                <div class="zds-row">
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link level="1" class="hydrated">
+                            
+                                <zds-icon slot="icon" size="inherit" sizing-type="square" library="fa-light" name="house-chimney" aria-hidden="true" class="hydrated"></zds-icon>
+                            
+                            Woning zoeken
+                            </zds-navigation-panel-link>
+                            
+                                
+                                    <zds-navigation-panel-link link="/aanbod/wonen" level="2" class="hydrated">Passende huurwoningen</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/portaal/mijn-pagina/woning-zoeken/mijn-reacties/advertenties-online" level="2" class="hydrated">Mijn reacties</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/portaal/mijn-pagina/woning-zoeken/aangeboden-woningen" level="2" class="hydrated">Aangeboden woningen</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/portaal/mijn-pagina/woning-zoeken/search-profile" level="2" class="hydrated">Search profile</zds-navigation-panel-link>
+                                
+                            
+                        </div>
+                    
+                        <div class="zds-col-12 sm:zds-col-6 lg:zds-col-4 zds-margin-bottom-6">
+                            <zds-navigation-panel-link level="1" class="hydrated">
+                            
+                                <zds-icon slot="icon" size="inherit" sizing-type="square" library="fa-regular" name="user" aria-hidden="true" class="hydrated"></zds-icon>
+                            
+                            Mijn gegevens
+                            </zds-navigation-panel-link>
+                            
+                                
+                                    <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/gebruikersnaam-en-wachtwoord/gebruikersnaam" level="2" class="hydrated">Gebruikersnaam en wachtwoord</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/persoonlijke-gegevens/aanvrager-1" level="2" class="hydrated">Persoonlijke gegevens</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/mijn-inkomen" level="2" class="hydrated">Mijn inkomen</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/mijn-berichten" level="2" class="hydrated">Mijn berichten</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/mijn-betalingen" level="2" class="hydrated">Mijn betalingen</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/mijn-documenten" level="2" class="hydrated">Mijn documenten</zds-navigation-panel-link>
+                                
+                                    <zds-navigation-panel-link link="/portaal/mijn-pagina/mijn-gegevens/uitschrijven" level="2" class="hydrated">Uitschrijven</zds-navigation-panel-link>
+                                
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        
+    </div>
+
+
+        </zds-navigation-body>
+        <script>
+            const loginNavigationLink = document.querySelector('zds-navigation-link[body-target="login-menu"]')
+            const portalMenuExpandIcon = document.querySelector('#login-menu-expand');
+            window.addEventListener('zdsClick', (event) => {
+                if (event.target == loginNavigationLink) {
+                    portalMenuExpandIcon.classList.contains('login-menu-expand--active') ? portalMenuExpandIcon.classList.remove('login-menu-expand--active') : portalMenuExpandIcon.classList.add('login-menu-expand--active');
+                }
+            });
+            ['zdsNavigationBodyClose', 'zdsNavigationPanelClose'].forEach(eventName => {
+                window.addEventListener(eventName, (event) => {
+                    portalMenuExpandIcon.classList.remove('login-menu-expand--active');
+                });
+            });
+        </script>
+    
+
+
+
+
+
+                
+        
+    </zds-navigation>
+
+    
+        <div id="language-switch-modal">
+    <zds-modal zds-id="zds-modal-ffd4d331-812c-4a77-b941-d993bf0471b6" class="hydrated">
+        <zds-button preset="muted" slot="header-end" variant="text" zds-modal-action="dismiss" aria-label="Sluiten" size="md" class="hydrated">
+            <zds-icon name="close" aria-hidden="true" library="mui" size="6" sizing-type="square" class="hydrated zds-button__icon"></zds-icon>
+        </zds-button>
+        <span slot="header"><span lang="nl">Taal</span> / <span lang="en">Language</span></span>
+        <div slot="body">
+            <h2 class="zds-headline-xs">
+                <span lang="nl">Kies een taal</span> / <span lang="en">Choose your language</span>
+            </h2>
+
+            
+                <div class="language-switch-modal-link zds-margin-y-4">
+                    <zds-link link="/portaal/account" lang="nl-NL" hreflang="nl-NL" title="Nederlands" aria-label="Wijzig de taal van de website naar Nederlands" class="hydrated">
+                        <span class="language-switch__flag" slot="icon"><span class="t3js-icon icon icon-size-small icon-state-default icon-flags-nl" data-identifier="flags-nl" aria-hidden="true">
+	<span class="icon-markup">
+<img src="/_assets/1ee1d3e909b58d32e30dcea666dd3224/Icons/Flags/nl.webp" width="16" height="16" alt="">
+	</span>
+	
+</span></span>
+                        Nederlands
+                    </zds-link>
+                </div>
+            
+                <div class="language-switch-modal-link zds-margin-y-4">
+                    <zds-link link="/en/my-page/account" lang="en-GB" hreflang="en-GB" title="Engels" aria-label="Change the language of the site to English" class="hydrated">
+                        <span class="language-switch__flag" slot="icon"><span class="t3js-icon icon icon-size-small icon-state-default icon-flags-gb" data-identifier="flags-gb" aria-hidden="true">
+	<span class="icon-markup">
+<img src="/_assets/1ee1d3e909b58d32e30dcea666dd3224/Icons/Flags/gb.webp" width="16" height="16" alt="">
+	</span>
+	
+</span></span>
+                        English
+                    </zds-link>
+                </div>
+            
+
+            
+                <div class="google-translate-wrapper zds-flex-wrap">
+                    <div id="google-translate-container">
+                        <h2 class="zds-headline-xs" lang="en">Or translate with Google Translate</h2>
+                        <div class="zds-margin-top-4 zds-flex">
+                            <img src="/_assets/ad8927e84ac4d76265df086510629ea1/Images/Google_Translate_logo.svg" width="20" height="20" alt="">
+                            <div id="google_translate_element_desktop" class="zds-hidden md:zds-block"></div>
+                            <div id="google_translate_element_mobile"></div>
+                        </div>
+                    </div>
+                    <div class="zds-margin-top-3 zds-body-sm"><b>Let op:</b> Het gebruik van Google Translate kan invloed hebben op de werking en weergave van de website, waardoor misschien niet alles werkt zoals verwacht.</div>
+                </div>
+            
+        </div>
+    </zds-modal>
+    <script>
+        const languageSwitchModal = document.querySelector('#language-switch-modal zds-modal');
+        languageSwitchModal.addEventListener('zdsModalShow', () => {
+            const languageZdsLinks = document.querySelectorAll('#language-switch-modal .language-switch-modal-link zds-link');
+            let zdsLinkElement = null;
+            for (zdsLinkElement of languageZdsLinks) {
+                if (!zdsLinkElement.getAttribute('data-orig-link') ) {
+                    zdsLinkElement.setAttribute('data-orig-link', zdsLinkElement.getAttribute('link'));
+                }
+                zdsLinkElement.setAttribute('link', zdsLinkElement.getAttribute('data-orig-link') + window.location.hash)
+            }
+        });
+
+        const languages = document.querySelectorAll('.language-switch-modal-link zds-link');
+        languages.forEach(language => {
+            language.addEventListener('zdsClick', function () {
+                const iframe = document.getElementById(':1.container');
+                if (!iframe) return;
+
+                const button = iframe.contentDocument.getElementById(':1.restore');
+                button.click();
+            })
+        })
+    </script>
+</div>
+
+    
+    
+</nav>
+
+
+    
+    
+    <div data-react-component="SmartAppBanner"></div>
+</header>
+
+        
+
+
+
+  
+    <div class="header-image">
+      <div class="focuspoint" data-image-imagesrc="/fileadmin/_processed_/2/5/csm_banner_klein_nnn_8685d65c4f.png" data-focus-x="0" data-focus-y="0" data-image-w="2560" data-image-h="480"><img src="/fileadmin/_processed_/2/5/csm_banner_klein_nnn_8685d65c4f.png" width="2560" height="480" alt="" style="max-height: 100%; top: 0px; left: -22.8906%;"></div>
+    </div>
+  
+
+
+        
+
+        
+    
+
+        
+    
+
+
+        
+    
+
+
+    
+
+
+    <div id="breadcrumb-wrapper" class="zds-padding-top-8">
+        
+
+
+    <div class="zds-container rs_skip">
+        <div class="zds-row">
+            <div class="default-content">
+                <zds-breadcrumbs max-items="4" class="hydrated">
+                    
+                        <zds-breadcrumb link="" class="zds-breadcrumbs__crumb hydrated" title="Home">Home</zds-breadcrumb>
+                    
+                </zds-breadcrumbs>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="zds-container">
+        <div class="zds-row zds-padding-top-3 md:zds-padding-top-8">
+            <div class="default-content">
+                
+                    <h1 class="zds-headline-xxl read-speaker-content">
+                        Account
+                    </h1>
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+<div class="read-speaker-content">
+    
+    <div id="main-content">
+        
+
+
+
+
+
+
+
+        
+                
+            
+    
+
+
+        <div class="content frame-default frame-type-text frame-list-type- frame-layout-0 frame-space-before-default
+        frame-space-after-default  ">
+            <div class="zds-container">
+                <div class="zds-row">
+                    <div class="zds-col">
+                        
+
+                                <div id="c2387" class="frame">
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+    
+
+
+                                    
+                                    
+    <div class="zds-row">
+        <div class="default-content">
+            <p>Je bent al ingelogd.</p>
+        </div>
+    </div>
+
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                </div>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+    </div>
+
+</div>
+
+
+
+    </main>
+    
+<footer id="footer" class="no-indentation">
+    <!-- Column=0 is makes sure it only renders colPos 0 content -->
+    <div class="content frame-default frame-type-container-3cols frame-list-type-  frame-layout-0 frame-space-before-default
+    frame-space-after-default zds-bg-primary zds-color-primary-foreground zds-color-primary-foreground-headline ">
+
+    
+
+<div class="zds-container">
+        <div class="zds-row">
+            <div class="md:zds-col-4">
+                
+    <div class="content-element ">
+        
+
+
+
+
+
+
+
+        
+                
+            
+    
+
+
+        <div class="content frame-default frame-type-image frame-list-type- frame-layout-0 frame-space-before-default
+        frame-space-after-default zds-bg-primary zds-color-primary-foreground zds-color-primary-foreground-headline ">
+            <div class="zds-container">
+                <div class="zds-row">
+                    <div class="zds-col">
+                        
+
+                                <div id="c411" class="frame">
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+    
+
+
+                                    
+                                    
+    
+    
+    
+        <div class="zds-row">
+            <div class="default-content">
+                <zds-carousel show-navigation="bottom-left" pagination="false" visible-slides="auto" active-slide="0" class="hydrated">
+                
+                    
+                            
+    <div style="max-width: 100%; overflow: hidden;">
+        
+                <img src="/fileadmin/logo/Logo.svg" data-hqsrc="/fileadmin/logo/Logo.svg" alt="" title="" loading="lazy" style="max-width: 100%;">
+            
+        
+    </div>
+
+                        
+                
+                <div slot="mirror-slides-normal"><div style="max-width: 100%; overflow: hidden; height: 100%; cursor: auto;" data-slide-index="0">
+        
+                <img src="/fileadmin/logo/Logo.svg" data-hqsrc="/fileadmin/logo/Logo.svg" alt="" title="" loading="lazy" style="max-width: 100%;">
+            
+        
+    </div></div><div slot="mirror-slides-fullscreen"><div style="max-width: 100%; overflow: hidden;">
+        
+                <img src="/fileadmin/logo/Logo.svg" data-hqsrc="/fileadmin/logo/Logo.svg" alt="" title="" loading="lazy" style="max-width: 100%;">
+            
+        
+    </div></div></zds-carousel>
+            </div>
+        </div>
+    
+
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                </div>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+    </div>
+
+    <div class="content-element ">
+        
+
+
+
+
+
+
+
+        
+                
+            
+    
+
+
+        <div class="content frame-default frame-type-text frame-list-type- frame-layout-0 frame-space-before-default
+        frame-space-after-default zds-bg-primary zds-color-primary-foreground zds-color-primary-foreground-headline ">
+            <div class="zds-container">
+                <div class="zds-row">
+                    <div class="zds-col">
+                        
+
+                                <div id="c36" class="frame">
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+    
+
+
+                                    
+                                    
+    <div class="zds-row">
+        <div class="default-content">
+            <p>Wij zijn Plaza Resident Services en wij geven jou de woning en de vrijheid om een bruisend stadsleven te leiden.</p>
+        </div>
+    </div>
+
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                </div>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+    </div>
+
+
+            </div>
+            <div class="md:zds-col-4">
+                
+    <div class="content-element ">
+        
+
+
+
+
+
+
+
+        
+                
+            
+    
+
+
+        <div class="content frame-default frame-type-dce_footer-links frame-list-type- frame-layout-0 frame-space-before-default
+        frame-space-after-default zds-bg-primary zds-color-primary-foreground zds-color-primary-foreground-headline ">
+            <div class="zds-container">
+                <div class="zds-row">
+                    <div class="zds-col">
+                        
+
+                                <div id="c649" class="frame">
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+    
+
+
+                                    
+                                    
+
+    
+    <header class="zds-margin-bottom-4">
+        
+
+<h2 class="zds-headline-sm">
+    AANBOD
+</h2>
+
+    </header>
+
+
+    <div class="zds-flex 
+    
+ 
+    zds-flex-col
+">
+        
+                
+
+
+
+
+
+
+<ul class="footer-links">
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link-cta class="zds-margin-bottom-4 zds-grid zds-gap-3 hydrated" link="/aanbod/wonen" link-target="_self">
+                                        Wonen
+                                    </zds-link-cta>
+                                
+                        
+                </li>
+            
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link-cta class="zds-margin-bottom-4 zds-grid zds-gap-3 hydrated" link="/aanbod/werkruimte" link-target="_self">
+                                        Werkruimte
+                                    </zds-link-cta>
+                                
+                        
+                </li>
+            
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link-cta class="zds-margin-bottom-4 zds-grid zds-gap-3 hydrated" link="/aanbod/parkeren/berging" link-target="_self">
+                                        Parkeren/opslag
+                                    </zds-link-cta>
+                                
+                        
+                </li>
+            
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link-cta class="zds-margin-bottom-4 zds-grid zds-gap-3 hydrated" link="/newnewnew-app" link-target="_self">
+                                        NewNewNew App
+                                    </zds-link-cta>
+                                
+                        
+                </li>
+            
+    
+</ul>
+
+            
+    </div>
+
+
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                </div>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+    </div>
+
+    <div class="content-element ">
+        
+
+
+
+
+
+
+
+        
+                
+            
+    
+
+
+        <div class="content frame-default frame-type-dce_footer-links frame-list-type- frame-layout-0 frame-space-before-default
+        frame-space-after-default zds-bg-primary zds-color-primary-foreground zds-color-primary-foreground-headline ">
+            <div class="zds-container">
+                <div class="zds-row">
+                    <div class="zds-col">
+                        
+
+                                <div id="c341" class="frame">
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+    
+
+
+                                    
+                                    
+
+    
+    <header class="zds-margin-bottom-4">
+        
+
+<h2 class="zds-headline-sm">
+    INFO &amp; CONTACT
+</h2>
+
+    </header>
+
+
+    <div class="zds-flex 
+    
+ 
+    zds-flex-col
+">
+        
+                
+
+
+
+
+
+
+<ul class="footer-links">
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link-cta class="zds-margin-bottom-4 zds-grid zds-gap-3 hydrated" link="/faq" link-target="_self">
+                                        FAQ
+                                    </zds-link-cta>
+                                
+                        
+                </li>
+            
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            <zds-link class="zds-margin-bottom-4 hydrated" link="/contact" link-target="_self">
+                                <zds-icon slot="icon" size="4" sizing-type="square" library="fa-light" name="envelope" aria-hidden="true" class="hydrated"></zds-icon>
+                                Email
+                            </zds-link>
+                        
+                </li>
+            
+    
+</ul>
+
+            
+    </div>
+
+
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                </div>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+    </div>
+
+
+            </div>
+            <div class="md:zds-col-4">
+                
+    <div class="content-element ">
+        
+
+
+
+
+
+
+
+        
+                
+            
+    
+
+
+        <div class="content frame-default frame-type-dce_footer-links frame-list-type- frame-layout-0 frame-space-before-default
+        frame-space-after-default zds-bg-primary zds-color-primary-foreground zds-color-primary-foreground-headline ">
+            <div class="zds-container">
+                <div class="zds-row">
+                    <div class="zds-col">
+                        
+
+                                <div id="c22" class="frame">
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+    
+
+
+                                    
+                                    
+
+    
+    <header class="zds-margin-bottom-4">
+        
+
+<h2 class="zds-headline-sm">
+    MIJN PAGINA
+</h2>
+
+    </header>
+
+
+    <div class="zds-flex 
+    
+ 
+    zds-flex-col
+">
+        
+                
+
+
+
+
+
+
+<ul class="footer-links">
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link-cta class="zds-margin-bottom-4 zds-grid zds-gap-3 hydrated" link="/inschrijven/registreren" link-target="_self">
+                                        Registreren
+                                    </zds-link-cta>
+                                
+                        
+                </li>
+            
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link-cta class="zds-margin-bottom-4 zds-grid zds-gap-3 hydrated" link="/portaal/mijn-pagina/mijn-overzicht" link-target="_self">
+                                        Account
+                                    </zds-link-cta>
+                                
+                        
+                </li>
+            
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link-cta class="zds-margin-bottom-4 zds-grid zds-gap-3 hydrated" link="/portaal/gebruikersnaam-vergeten" link-target="_self">
+                                        Gebruikersnaam vergeten
+                                    </zds-link-cta>
+                                
+                        
+                </li>
+            
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link-cta class="zds-margin-bottom-4 zds-grid zds-gap-3 hydrated" link="/portaal/wachtwoord-vergeten" link-target="_self">
+                                        Wachtwoord vergeten
+                                    </zds-link-cta>
+                                
+                        
+                </li>
+            
+    
+</ul>
+
+            
+    </div>
+
+
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                </div>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+    </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+        
+                
+            
+    
+
+
+        <div class="content frame-default frame-type-dce_footer-links frame-list-type- frame-layout-0 frame-space-before-small
+        frame-space-after-small  ">
+            <div class="zds-container">
+                <div class="zds-row">
+                    <div class="zds-col">
+                        
+
+                                <div id="c340" class="frame">
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+    
+
+
+                                    
+                                    
+
+    
+    <div class="zds-flex 
+    zds-justify-content-start
+ 
+    zds-flex-col sm:zds-flex-row
+">
+        
+                
+
+
+
+
+
+    
+
+
+<ul class="footer-links zds-flex zds-flex-col sm:zds-flex-row">
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link class="sm:zds-margin-right-6 hydrated" link="/disclaimer" link-target="_self">
+                                        Disclaimer
+                                    </zds-link>
+                                
+                        
+                </li>
+            
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link class="sm:zds-margin-right-6 hydrated" link="/footer/privacy-statement" link-target="_self">
+                                        Privacy Statement
+                                    </zds-link>
+                                
+                        
+                </li>
+            
+    
+        
+                <li class="footer-links-unordered-list">
+                    
+                            
+                                    <zds-link class="sm:zds-margin-right-6 hydrated" link="https://www.zig.nl/" link-target="_self">
+                                        Ontwikkeld door Zig Websoftware
+                                    </zds-link>
+                                
+                        
+                </li>
+            
+    
+</ul>
+
+            
+    </div>
+
+
+                                    
+                                        
+
+
+
+                                    
+                                    
+                                        
+
+
+
+                                    
+                                </div>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+</footer>
+<script src="/typo3temp/assets/compressed/merged-187e5997b35e3c3904201e643ae0262f.js?1786481103"></script>
+<script src="https://sdk.zig365.nl/js/hexia.js"></script>
+
+<script src="/typo3temp/assets/compressed/merged-3a19609a85ab432d4482a987a285d108.js?1786481103"></script>
+<script src="/_assets/c25ace7dfe73fbb8c05f07ae9ca2a4bb/JavaScript/wzp-angular-bundle.min.js?1786017960" defer="defer"></script>
+<script priority="1" src="https://zds-cdn.zig365.nl/@zig-react/19.2.8/react.production.min.js"></script>
+<script priority="1" src="https://zds-cdn.zig365.nl/@zig-react-dom/19.2.8/react-dom.production.min.js"></script>
+<script type="module" src="/_assets/ad8927e84ac4d76265df086510629ea1/Vite/assets/vanilla-A6ppy7qo.js"></script>
+<script type="module" src="/_assets/ad8927e84ac4d76265df086510629ea1/Vite/assets/Notifications-jpBDtSWP.js"></script>
+<script type="module" src="/_assets/ad8927e84ac4d76265df086510629ea1/Vite/assets/Search-0E8Cmsjl.js"></script>
+<script type="text/javascript" id="" charset="">(function(){fetch("https://api.ipify.org").then(function(a){return a.text()}).then(function(a){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:"IPAddressEvent",IPAddress:a})})})();</script>
+<script type="text/javascript" id="" charset="">!function(d,h,e){d.TiktokAnalyticsObject=e;var a=d[e]=d[e]||[];a.methods="page track identify instances debug on off once ready alias group enableCookie disableCookie holdConsent revokeConsent grantConsent".split(" ");a.setAndDefer=function(b,c){b[c]=function(){b.push([c].concat(Array.prototype.slice.call(arguments,0)))}};for(d=0;d<a.methods.length;d++)a.setAndDefer(a,a.methods[d]);a.instance=function(b){b=a._i[b]||[];for(var c=0;c<a.methods.length;c++)a.setAndDefer(b,a.methods[c]);return b};a.load=
+function(b,c){var f="https://analytics.tiktok.com/i18n/pixel/events.js",g=c&&c.partner;a._i=a._i||{};a._i[b]=[];a._i[b]._u=f;a._i[b]._partner=g||"GoogleTagManagerClient";a._t=a._t||{};a._t[b]=+new Date;a._o=a._o||{};a._o[b]=c||{};a._partner=a._partner||"GoogleTagManagerClient";c=document.createElement("script");c.type="text/javascript";c.async=!0;c.src=f+"?sdkid\x3d"+b+"\x26lib\x3d"+e;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(c,b)};a.load("CTTTE23C77U1GH2BMUAG");a.page()}(window,
+document,"ttq");</script>
+
+<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1033302636871454");fbq("set","agent","tmgoogletagmanager","1033302636871454");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1033302636871454&amp;ev=PageView&amp;noscript=1"></noscript>
+<script type="module" src="/_assets/ad8927e84ac4d76265df086510629ea1/Vite/assets/KnowledgeBase-CfdNvzbx.js"></script>
+<script type="module" src="/_assets/ad8927e84ac4d76265df086510629ea1/Vite/assets/SmartAppBanner-D0AZIPNZ.js"></script>
+<script type="module" src="/_assets/c25ace7dfe73fbb8c05f07ae9ca2a4bb/Vite/LoginPopup.entry-qcocizEk.js"></script>
+<script type="module" src="/_assets/c25ace7dfe73fbb8c05f07ae9ca2a4bb/Vite/RegisterPopup.entry-D9kSZksN.js"></script>
+<script>
+/*TS_inlineFooter*/
+        $('.focuspoint').each(function() {
+            var container = $(this);
+            var img = container.find('img');
+
+            if (img[0].complete) {
+                container.focusPoint();
+            } else {
+                img.on('load', function() {
+                    container.focusPoint();
+                });
+            }
+        });
+
+
+</script>
+<script>if (typeof Node === 'function' && Node.prototype) {
+    const originalRemoveChild = Node.prototype.removeChild;
+    Node.prototype.removeChild = function(child) {
+        if (child.parentNode !== this) {
+            if (console) {
+                console.error('Cannot remove a child from a different parent', child, this);
+            }
+            return child;
+        }
+        return originalRemoveChild.apply(this, arguments);
+    }
+
+    const originalInsertBefore = Node.prototype.insertBefore;
+    Node.prototype.insertBefore = function(newNode, referenceNode) {
+        if (referenceNode && referenceNode.parentNode !== this) {
+            if (console) {
+                console.error('Cannot insert before a reference node from a different parent', referenceNode, this);
+            }
+            return newNode;
+        }
+        return originalInsertBefore.apply(this, arguments);
+    }
+}</script>
+
+
+
+
+		<script>
+			angular.element(document).ready( function(){
+				AngularDelayedBootstrap.bootstrap();
+			});
+		</script>
+
+
+
+<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1033302636871454");fbq("set","agent","gtmss","1033302636871454");fbq("track",google_tag_manager["rm"]["89681478"](25),{},{eventID:google_tag_manager["rm"]["89681478"](27)});</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1033302636871454&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script id="" text="" charset="" type="text/javascript" src="https://capi-automation.s3.us-east-2.amazonaws.com/public/client_js/capiParamBuilder/clientParamBuilder.bundle.js"></script>
+<script type="text/javascript" id="" charset="">clientParamBuilder.processAndCollectAllParams();</script><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><iframe class="CybotCookiebotHiddenIframe" name="__uspapiLocator" tabindex="-1" role="presentation" aria-hidden="true" title="Blank"></iframe><iframe class="CybotCookiebotOffscreenIframe" tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="https://consentcdn.cookiebot.com/sdk/bc-v4.min.html"></iframe></body></html>

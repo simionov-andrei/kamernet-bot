@@ -16,9 +16,9 @@ search:
   # Per-type max monthly rent in EUR (inclusive). The cap that applies is
   # chosen by the listing's property type. Keys are matched case-insensitively.
   max_rent_by_type:
-    Studio: 1350
-    Room: 900
-    Apartment: 1350
+    Studio: 1500
+    Room: 1050
+    Apartment: 1500
   # Fallback cap for any type not listed above. Leave null for no cap.
   max_rent: null
   # Min living area in m². Leave null for no minimum.
@@ -60,4 +60,4 @@ message:
       simionov.andrei@gmail.com
 
 # ── How often to poll (seconds). Only used when running as an always-on loop. ──
-poll_interval_seconds: 60
+poll_interval_seconds: 5
